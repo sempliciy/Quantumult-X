@@ -2,22 +2,18 @@
 excluded_routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8
 network_check_url = http://www.gstatic.com/generate_204
 server_check_url = http://www.gstatic.cn/generate_204
-;geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-location-with-script.js
-;network_check_url=http://bing.com/
-;dns_exclusion_list=*.qq.com, qq.com
-;ssid_suspended_list=LINK_22E174, LINK_22E175
-;udp_whitelist=53, 123, 1900, 80-443
-;excluded_routes= 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
-;icmp_auto_reply=true
+geo_location_checker = http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
 
 [dns]
+server = 119.29.29.29
+server = 119.28.28.28
+server = 1.2.4.8
+server = 182.254.116.116
 server=114.114.114.114
 server=202.141.176.93 
 server=202.141.178.13
 server=117.50.10.10
 server=223.5.5.5
-server=119.29.29.29:53
-server=119.28.28.28
 
 server=/*.taobao.com/223.5.5.5
 server=/*.tmall.com/223.5.5.5
@@ -37,21 +33,7 @@ server=/*.127.net/119.29.29.29
 server=/*.netease.com/119.29.29.29
 server=/*.mi.com/119.29.29.29
 server=/*.xiaomi.com/119.29.29.29
-;server=/*testflight.apple.com/23.76.66.98
-;server=8.8.8.8
-;server=/example1.com/8.8.4.4
-;server=/*.example2.com/223.5.5.5
-;server=/example4.com/[2001:4860:4860::8888]:53
-;address=/example5.com/192.168.16.18
-;address=/example6.com/[2001:8d3:8d3:8d3:8d3:8d3:8d3:8d3]
 
-
-#
-# static policy points to the server in candidates you manually selected.
-# available policy points to the first available server in candidates based on server_check_url(concurrent url latency test will be immediately launched when the policy has been triggered and the policy result is unavailable).
-# round-robin policy points to the next server in candidates for next connection.
-# ssid policy points to the server depending on the network environment.
-#
 [policy]
 static=Outside, proxy, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Outside.png
 static=Mainland, direct, proxy, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Mainland.png
@@ -66,16 +48,6 @@ static=GMedia, Outside, direct, img-url=https://raw.githubusercontent.com/sempli
 static=Speedtest, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Speedtest.png
 static=Others, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Others.png
 
-
-;static=policy-name-1, Sample-A, Sample-B, Sample-C
-;available=policy-name-2, Sample-A, Sample-B, Sample-C
-;round-robin=policy-name-3, Sample-A, Sample-B, Sample-C
-;ssid=policy-name-4, Sample-A, Sample-B, LINK_22E171:Sample-B, LINK_22E172:Sample-C
-
-#
-# Params “tag” and “enabled” are optional.
-# The default sync interval for all kinds of remote resources is 24*60*60 seconds.
-#
 [server_remote]
 
 [filter_remote]
@@ -96,45 +68,13 @@ https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/LAN.lis
 https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrite.conf, tag=Rewrite (ConnersHua), enabled=true
 http://cloudcompute.lbyczf.com/quanx-rewrite, tag=Rewrite (lhie1), enabled=false
 
-
 [server_local]
-;shadowsocks=a.example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, server_check_url=http://www.apple.com/generate_204, tag=Sample-A
-;shadowsocks=b.example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, tag=Sample-B
-;shadowsocks=c.example.com:443, method=chacha20, password=pwd, obfs=tls, obfs-host=bing.com, fast-open=false, udp-relay=false, tag=Sample-C
-;shadowsocks=d.example.com:80, method=chacha20, password=pwd, obfs=ws, obfs-host=bing.com, obfs-uri=/ws, fast-open=false, udp-relay=false, tag=Sample-D
-;shadowsocks=e.example.com:80, method=chacha20, password=pwd, obfs=ws, obfs-host=bing.com, fast-open=false, udp-relay=false, tag=Sample-E
-;shadowsocks=f.example.com:443, method=chacha20, password=pwd, obfs=wss, obfs-host=bing.com, obfs-uri=/ws, fast-open=false, udp-relay=false, tag=Sample-F
-;shadowsocks=g.example.com:443, method=chacha20, password=pwd, ssr-protocol=auth_chain_b, ssr-protocol-param=def, obfs=tls1.2_ticket_fastauth, obfs-host=bing.com, tag=Sample-G
 
 [filter_local]
-host, m.ws83c.cn, reject
-host, xn--xhq9mt12cf5v.top, reject
-host, wx.sifakaoshi360.com, reject
-host, pv.dakawm.cc, reject
-host, rz.w8r4q.cn, reject
-host, ws83c.cn, reject
-host, ee.ws83c.cn, reject
-host, mtteve.beacon.qq.com, reject
-host, lib.baomitu.com, reject
-host, cdp.cloud.unity3d.com, reject
-host, c.tdm.qq.com, reject
-host, stable.pay.st.sankuai.com, reject
-host, m.lesanmo.top, reject
-host, l888.aacmk3.com, reject
-host, img.yclxrj.top, reject
-host, img.hebeiaoyi.cn, reject
-host, www.oldtimescc.cc, direct
-host, m.jinyt.top, reject
-host, rm.baidu.com.t0z6m.cn, reject
-host, uo.jstaogu.com, reject
 host, www.52shuku.me, direct
 host-suffix, pstatp.com, Outside
 host, api.trakt.tv, Outside
 host-keyword, sto.cx, Outside
-;user-agent, ?abc*, proxy
-;host, www.google.com, proxy
-;host-keyword, adsite, reject
-;host-suffix, googleapis.com, proxy
 ip-cidr, 10.0.0.0/8, direct
 ip-cidr, 127.0.0.0/8, direct
 ip-cidr, 172.16.0.0/12, direct
@@ -142,7 +82,6 @@ ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 224.0.0.0/24, direct
 geoip, cn, direct
 final, Others
-
 
 [rewrite_local]
 #Tiktok

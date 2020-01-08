@@ -53,18 +53,18 @@ server=/*.xiaomi.com/119.29.29.29
 # ssid policy points to the server depending on the network environment.
 #
 [policy]
-static=Outside, proxy, direct, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/Outside.png
-static=Mainland, direct, proxy, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/Mainland.png
-static=Netflix, Outside, direct, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/Netflix.png
-static=YouTube, Outside, direct, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/YouTube.png
-static=Microsoft, direct, Outside, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/Microsoft.png
-static=PayPal, Outside, direct, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/PayPal.png
-static=AdBlock, reject, direct, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/AdBlock.png
-static=Apple, direct, Outside, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/Apple.png
-static=CMedia, direct, proxy, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/CMedia.png
-static=GMedia, Outside, direct, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/GMedia.png
-static=Speedtest, Outside, direct, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/Speedtest.png
-static=Others, Outside, direct, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/Others.png
+static=Outside, proxy, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Outside.png
+static=Mainland, direct, proxy, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Mainland.png
+static=Netflix, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Netflix.png
+static=YouTube, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/YouTube.png
+static=Microsoft, direct, Outside, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Microsoft.png
+static=PayPal, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/PayPal.png
+static=AdBlock, reject, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/AdBlock.png
+static=Apple, direct, Outside, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Apple.png
+static=CMedia, direct, proxy, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/CMedia.png
+static=GMedia, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/GMedia.png
+static=Speedtest, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Speedtest.png
+static=Others, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Others.png
 
 
 ;static=policy-name-1, Sample-A, Sample-B, Sample-C

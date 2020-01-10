@@ -18,6 +18,8 @@ HOST-SUFFIX,img.hebeiaoyi.cn, AdBlock
 HOST-SUFFIX,m.jinyt.top, AdBlock
 HOST-SUFFIX,rm.baidu.com.t0z6m.cn, AdBlock
 HOST-SUFFIX,uo.jstaogu.com, AdBlock
+HOST-SUFFIX,k.hbfls.vip, AdBlock
+HOST-SUFFIX,s.tuziluoluo.com, AdBlock
 
 # Ads in Video apps
 # > iQIYI & PPS
@@ -272,6 +274,17 @@ HOST-SUFFIX,union.6.cn,AdBlock
 HOST-SUFFIX,wa.gtimg.com,AdBlock
 HOST-SUFFIX,bfshan.cn,AdBlock
 
+# REJECT
+# > Umeng
+HOST,alog.umeng.co,AdBlock
+HOST,alog.umeng.com,AdBlock
+HOST,alogs.umeng.com,AdBlock
+HOST,alog.umengcloud.com,AdBlock
+HOST,alogs.umengcloud.com,AdBlock
+HOST,ar.umeng.com,AdBlock
+HOST,plbslog.umeng.com,AdBlock
+HOST,ulogs.umeng.com,AdBlock
+HOST,ulogs.umengcloud.com,AdBlock
 
 # > Client
 HOST-KEYWORD,admaster,AdBlock
@@ -2427,6 +2440,8 @@ HOST-SUFFIX,cnsjx.net,AdBlock
 HOST-SUFFIX,cnxad.com,AdBlock
 HOST-SUFFIX,cnxad.net,AdBlock
 HOST-SUFFIX,cnzhqs.com,AdBlock
+HOST-SUFFIX,cnzz.cn,AdBlock
+HOST-SUFFIX,cnzz.com,AdBlock
 HOST-SUFFIX,co.dtech.baofeng.com,AdBlock
 HOST-SUFFIX,cocounion.com,AdBlock
 HOST-SUFFIX,cod.southmoney.com,AdBlock

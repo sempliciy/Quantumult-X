@@ -35,7 +35,7 @@ server=/*.mi.com/119.29.29.29
 server=/*.xiaomi.com/119.29.29.29
 
 [policy]
-static=Outside, proxy, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Outside.png
+available=Outside, proxy, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Outside.png
 static=Mainland, direct, proxy, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Mainland.png
 static=Netflix, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Netflix.png
 static=YouTube, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/YouTube.png

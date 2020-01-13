@@ -1,73 +1,73 @@
 # > AcFun
-USER-AGENT,AcFun*,CMedia
-HOST-SUFFIX,acfun.cn,CMedia
-HOST-SUFFIX,acfun.com,CMedia
-HOST-SUFFIX,acfun.tv,CMedia
-HOST-SUFFIX,aixifan.com,CMedia
+USER-AGENT,AcFun*,direct
+HOST-SUFFIX,acfun.cn,direct
+HOST-SUFFIX,acfun.com,direct
+HOST-SUFFIX,acfun.tv,direct
+HOST-SUFFIX,aixifan.com,direct
 
 # > Bilibili
-USER-AGENT,*bili*,CMedia
-HOST-KEYWORD,bilibili,CMedia
-HOST-SUFFIX,acgvideo.com,CMedia
-HOST-SUFFIX,hdslb.com,CMedia
+USER-AGENT,*bili*,direct
+HOST-KEYWORD,bilibili,direct
+HOST-SUFFIX,acgvideo.com,direct
+HOST-SUFFIX,hdslb.com,direct
 
 # > iQiyi
-USER-AGENT,QIYI*,CMedia
-USER-AGENT,iQiYi*,CMedia
-USER-AGENT,PPStream*,CMedia
-USER-AGENT,QYPlayer*,CMedia
-HOST-SUFFIX,iqiyi.com,CMedia
-HOST-SUFFIX,iqiyipic.com,CMedia
-HOST-SUFFIX,qy.net,CMedia
-HOST-SUFFIX,71.am,CMedia
+USER-AGENT,QIYI*,direct
+USER-AGENT,iQiYi*,direct
+USER-AGENT,PPStream*,direct
+USER-AGENT,QYPlayer*,direct
+HOST-SUFFIX,iqiyi.com,direct
+HOST-SUFFIX,iqiyipic.com,direct
+HOST-SUFFIX,qy.net,direct
+HOST-SUFFIX,71.am,direct
 
 # > Kugou & Kuwo
-HOST-SUFFIX,kugou.com,CMedia
-USER-AGENT,%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90*,CMedia
-HOST-SUFFIX,kuwo.cn,CMedia
-HOST-SUFFIX,koowo.com,CMedia
+HOST-SUFFIX,kugou.com,direct
+USER-AGENT,%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90*,direct
+HOST-SUFFIX,kuwo.cn,direct
+HOST-SUFFIX,koowo.com,direct
 
 # > Letv
-HOST-SUFFIX,api.mob.app.letv.com,CMedia
-HOST-SUFFIX,letv.com,CMedia
+HOST-SUFFIX,api.mob.app.letv.com,direct
+HOST-SUFFIX,letv.com,direct
 
 # > MGTV
-USER-AGENT,MGTV*,CMedia
-HOST-SUFFIX,hunantv.com,CMedia
-HOST-SUFFIX,mgtv.com,CMedia
+USER-AGENT,MGTV*,direct
+HOST-SUFFIX,hunantv.com,direct
+HOST-SUFFIX,mgtv.com,direct
 
 # > Migu
-USER-AGENT,MiguVideo*,CMedia
-USER-AGENT,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91,CMedia
-HOST-SUFFIX,cmvideo.cn,CMedia
-HOST-SUFFIX,migu.cn,CMedia
-HOST-SUFFIX,miguvideo.com,CMedia
+USER-AGENT,MiguVideo*,direct
+USER-AGENT,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91,direct
+HOST-SUFFIX,cmvideo.cn,direct
+HOST-SUFFIX,migu.cn,direct
+HOST-SUFFIX,miguvideo.com,direct
 
 # > MOOMusic
-USER-AGENT,MOO%E9%9F%B3%E4%B9%90*,CMedia
+USER-AGENT,MOO%E9%9F%B3%E4%B9%90*,direct
 
 # > QQMusic
-USER-AGENT,QQ%e9%9f%b3%e4%b9%90*,CMedia
-USER-AGENT,QQMusic*,CMedia
-HOST-SUFFIX,*music.qq.com,CMedia
-HOST-SUFFIX,y.qq.com,CMedia
-HOST,aqqmusic.tc.qq.com,CMedia
+USER-AGENT,QQ%e9%9f%b3%e4%b9%90*,direct
+USER-AGENT,QQMusic*,direct
+HOST-SUFFIX,*music.qq.com,direct
+HOST-SUFFIX,y.qq.com,direct
+HOST,aqqmusic.tc.qq.com,direct
 
 # > Tencent Video
-USER-AGENT,live4iphone*,CMedia
-USER-AGENT,qqlive4iphone*,CMedia
-USER-AGENT,TencentMidasConnect*,CMedia
-HOST-SUFFIX,v.qq.com,CMedia
-HOST-SUFFIX,video.qq.com,CMedia
+USER-AGENT,live4iphone*,direct
+USER-AGENT,qqlive4iphone*,direct
+USER-AGENT,TencentMidasConnect*,direct
+HOST-SUFFIX,v.qq.com,direct
+HOST-SUFFIX,video.qq.com,direct
 
 # > Xiami Music
-USER-AGENT,xiami*,CMedia
-HOST-SUFFIX,xiami.com,CMedia
-HOST-SUFFIX,xiami.net,CMedia
+USER-AGENT,xiami*,direct
+HOST-SUFFIX,xiami.com,direct
+HOST-SUFFIX,xiami.net,direct
 
 # > Youku
-USER-AGENT,Youku*,CMedia
-USER-AGENT,%E4%BC%98%E9%85%B7*,CMedia
-HOST-SUFFIX,soku.com,CMedia
-HOST-SUFFIX,youku.com,CMedia
-HOST-SUFFIX,ykimg.com,CMedia
+USER-AGENT,Youku*,direct
+USER-AGENT,%E4%BC%98%E9%85%B7*,direct
+HOST-SUFFIX,soku.com,direct
+HOST-SUFFIX,youku.com,direct
+HOST-SUFFIX,ykimg.com,direct

@@ -42,9 +42,7 @@ static=YouTube, Outside, direct, img-url=https://raw.githubusercontent.com/sempl
 static=AdBlock, reject, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/AdBlock.png
 static=Apple, direct, Outside, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Apple.png
 static=Others, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Others.png
-static=Maying,img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Maying.png
-static=YoYu,img-url=https://raw.githubusercontent.com/zealson/Zure/master/IconSet/YoYu.png
-static=Renzhe,img-url=https://raw.githubusercontent.com/zealson/Zure/master/IconSet/rocket.png
+static=Speedtest, Outside, direct, img-url=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/IconSet/Speedtest.png
 
 [server_remote]
 
@@ -55,8 +53,8 @@ https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/Rules/Netflix.li
 https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/Rules/YouTube.list, tag=YouTube (Stick Rules), enabled=true
 https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/Rules/Outside.list, tag=Outside (Stick Rules), enabled=true
 https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/Rules/Mainland.list, tag=Mainland (Stick Rules), enabled=true
+https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/Rules/Speedtest.list, tag=Speedtest (Stick Rules), enabled=true
 https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/Rules/GMedia.list, enabled=true
-https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/Rules/Speedtest.list, enabled=true
 https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/Rules/CMedia.list, enabled=true
 https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/Rules/Microsoft.list, enabled=true
 https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/Rules/PayPal.list, enabled=true

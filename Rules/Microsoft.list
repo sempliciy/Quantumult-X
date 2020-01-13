@@ -1,4 +1,4 @@
-USER-AGENT,direct*,direct
+USER-AGENT,Microsoft*,direct
 HOST-KEYWORD,microsoft,direct
 HOST-SUFFIX,ms,direct
 HOST-SUFFIX,bing.com,direct

@@ -2,6 +2,12 @@
 HOST-SUFFIX,pstatp.com, Outside
 HOST-SUFFIX,api.trakt.tv, Outside
 HOST-SUFFIX,sto.cx, Outside
+
+# > PayPal
+USER-AGENT,PayPal*,Outside
+HOST-SUFFIX,paypal.com,Outside
+HOST-SUFFIX,paypalobjects.com,Outside
+
 # > ABC
 HOST-SUFFIX,edgedatg.com,Outside
 HOST-SUFFIX,go.com,Outside

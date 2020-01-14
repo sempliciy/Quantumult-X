@@ -2,6 +2,138 @@
 HOST-SUFFIX,pstatp.com, Outside
 HOST-SUFFIX,api.trakt.tv, Outside
 HOST-SUFFIX,sto.cx, Outside
+# > ABC
+HOST-SUFFIX,edgedatg.com,Outside
+HOST-SUFFIX,go.com,Outside
+
+# > AbemaTV
+USER-AGENT,AbemaTV*,Outside
+HOST-SUFFIX,abema.io,Outside
+HOST-SUFFIX,ameba.jp,Outside
+HOST-SUFFIX,hayabusa.io,Outside
+HOST,abematv.akamaized.net,Outside
+HOST,ds-linear-abematv.akamaized.net,Outside
+HOST,ds-vod-abematv.akamaized.net,Outside
+HOST,linear-abematv.akamaized.net,Outside
+
+# > Amazon Prime Video
+USER-AGENT,InstantVideo.US*,Outside
+USER-AGENT,Prime%20Video*,Outside
+HOST-SUFFIX,aiv-cdn.net,Outside
+HOST-SUFFIX,amazonaws.com,Outside
+HOST-SUFFIX,amazonvideo.com,Outside
+HOST-SUFFIX,llnwd.net,Outside
+
+# > Bahamut
+USER-AGENT,Anime*,Outside
+HOST-SUFFIX,bahamut.com.tw,Outside
+HOST-SUFFIX,gamer.com.tw,Outside
+HOST-SUFFIX,hinet.net,Outside
+
+# > BBC
+USER-AGENT,BBCiPlayer*,Outside
+HOST-KEYWORD,bbcfmt,Outside
+HOST-KEYWORD,co.uk,Outside
+HOST-KEYWORD,uk-live,Outside
+HOST-SUFFIX,bbc.co,Outside
+HOST-SUFFIX,bbc.co.uk,Outside
+HOST-SUFFIX,bbc.com,Outside
+HOST-SUFFIX,bbci.co,Outside
+HOST-SUFFIX,bbci.co.uk,Outside
+
+# > CHOCO TV
+USER-AGENT,TwDramas*,Outside
+HOST-SUFFIX,chocotv.com.tw,Outside
+
+# > Disney Plus
+USER-AGENT,Disney*,Outside
+DOMAIN-SUFFIX,disneyplus.com,Outside
+DOMAIN-SUFFIX,disney-plus.net,Outside
+DOMAIN-SUFFIX,dssott.com,Outside
+DOMAIN-SUFFIX,bamgrid.com,Outside
+DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,Outside
+DOMAIN,cdn.registerdisney.go.com,Outside
+
+# > Now E
+USER-AGENT,PCCW*,Outside
+HOST-KEYWORD,nowe,Outside
+HOST,bcbolthboa-a.akamaihd.net,Outside
+HOST-SUFFIX,nowe.com,Outside
+HOST-SUFFIX,youboranqs01.com,Outside
+
+# > Epicgames
+HOST-KEYWORD,epicgames,Outside
+HOST-SUFFIX,helpshift.com,Outside
+
+# > Fox+
+USER-AGENT,FOX%20NOW*,Outside
+USER-AGENT,FOXPlus*,Outside
+HOST-KEYWORD,foxplus,Outside
+HOST-SUFFIX,config.fox.com,Outside
+HOST-SUFFIX,emome.net,Outside
+HOST-SUFFIX,fox.com,Outside
+HOST-SUFFIX,foxdcg.com,Outside
+HOST-SUFFIX,foxnow.com,Outside
+HOST-SUFFIX,foxplus.com,Outside
+HOST-SUFFIX,foxplay.com,Outside
+HOST-SUFFIX,ipinfo.io,Outside
+HOST-SUFFIX,mstage.io,Outside
+HOST-SUFFIX,now.com,Outside
+HOST-SUFFIX,theplatform.com,Outside
+HOST-SUFFIX,urlload.net,Outside
+
+# > HBO & HBO Go
+USER-AGENT,HBO%20NOW*,Outside
+HOST-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,Outside
+HOST-SUFFIX,hbo.com,Outside
+HOST-SUFFIX,hboasia.com,Outside
+HOST-SUFFIX,hbogo.com,Outside
+HOST-SUFFIX,hbogoasia.hk,Outside
+
+# > Hulu
+USER-AGENT,Hulu*,Outside
+HOST-SUFFIX,happyon.jp,Outside
+HOST-SUFFIX,hulu.com,Outside
+HOST-SUFFIX,hulu.jp,Outside
+HOST-SUFFIX,huluim.com,Outside
+HOST-SUFFIX,hulustream.com,Outside
+
+# > Imkan
+HOST-SUFFIX,imkan.tv,Outside
+
+# > JOOX
+USER-AGENT,WeMusic*,Outside
+USER-AGENT,JOOX*,Outside
+HOST-SUFFIX,joox.com,Outside
+
+# > MytvSUPER
+USER-AGENT,mytv*,Outside
+HOST-KEYWORD,nowtv100,Outside
+HOST-KEYWORD,rthklive,Outside
+HOST-SUFFIX,mytvsuper.com,Outside
+HOST-SUFFIX,tvb.com,Outside
+
+# > Pandora
+HOST-SUFFIX,pandora.com,Outside
+
+# > Sky GO
+USER-AGENT,skygo*,Outside
+HOST-SUFFIX,sky.com,Outside
+HOST-SUFFIX,skygo.co.nz,Outside
+
+# > SoundCloud
+USER-AGENT,SoundCloud*,Outside
+
+# > Spotify
+USER-AGENT,Spotify*,Outside
+HOST-SUFFIX,pscdn.co,Outside
+HOST-SUFFIX,scdn.co,Outside
+HOST-SUFFIX,spoti.fi,Outside
+HOST-SUFFIX,spotify.com,Outside
+IP-CIDR,35.186.224.47/32,Outside
+
+# > viuTV
+HOST-SUFFIX,viu.tv,Outside
 
 # > UA
 USER-AGENT,%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5*,Outside

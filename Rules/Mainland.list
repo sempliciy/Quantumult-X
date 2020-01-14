@@ -1,6 +1,80 @@
 #Others
 HOST-SUFFIX,www.52shuku.me,Mainland
 
+# > AcFun
+USER-AGENT,AcFun*,Mainland
+HOST-SUFFIX,acfun.cn,Mainland
+HOST-SUFFIX,acfun.com,Mainland
+HOST-SUFFIX,acfun.tv,Mainland
+HOST-SUFFIX,aixifan.com,Mainland
+
+# > Bilibili
+USER-AGENT,*bili*,Mainland
+HOST-KEYWORD,bilibili,Mainland
+HOST-SUFFIX,acgvideo.com,Mainland
+HOST-SUFFIX,hdslb.com,Mainland
+
+# > iQiyi
+USER-AGENT,QIYI*,Mainland
+USER-AGENT,iQiYi*,Mainland
+USER-AGENT,PPStream*,Mainland
+USER-AGENT,QYPlayer*,Mainland
+HOST-SUFFIX,iqiyi.com,Mainland
+HOST-SUFFIX,iqiyipic.com,Mainland
+HOST-SUFFIX,qy.net,Mainland
+HOST-SUFFIX,71.am,Mainland
+
+# > Kugou & Kuwo
+HOST-SUFFIX,kugou.com,Mainland
+USER-AGENT,%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90*,Mainland
+HOST-SUFFIX,kuwo.cn,Mainland
+HOST-SUFFIX,koowo.com,Mainland
+
+# > Letv
+HOST-SUFFIX,api.mob.app.letv.com,Mainland
+HOST-SUFFIX,letv.com,Mainland
+
+# > MGTV
+USER-AGENT,MGTV*,Mainland
+HOST-SUFFIX,hunantv.com,Mainland
+HOST-SUFFIX,mgtv.com,Mainland
+
+# > Migu
+USER-AGENT,MiguVideo*,Mainland
+USER-AGENT,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91,Mainland
+HOST-SUFFIX,cmvideo.cn,Mainland
+HOST-SUFFIX,migu.cn,Mainland
+HOST-SUFFIX,miguvideo.com,Mainland
+
+# > MOOMusic
+USER-AGENT,MOO%E9%9F%B3%E4%B9%90*,Mainland
+
+# > QQMusic
+USER-AGENT,QQ%e9%9f%b3%e4%b9%90*,Mainland
+USER-AGENT,QQMusic*,Mainland
+HOST-SUFFIX,*music.qq.com,Mainland
+HOST-SUFFIX,y.qq.com,Mainland
+HOST,aqqmusic.tc.qq.com,Mainland
+
+# > Tencent Video
+USER-AGENT,live4iphone*,Mainland
+USER-AGENT,qqlive4iphone*,Mainland
+USER-AGENT,TencentMidasConnect*,Mainland
+HOST-SUFFIX,v.qq.com,Mainland
+HOST-SUFFIX,video.qq.com,Mainland
+
+# > Xiami Music
+USER-AGENT,xiami*,Mainland
+HOST-SUFFIX,xiami.com,Mainland
+HOST-SUFFIX,xiami.net,Mainland
+
+# > Youku
+USER-AGENT,Youku*,Mainland
+USER-AGENT,%E4%BC%98%E9%85%B7*,Mainland
+HOST-SUFFIX,soku.com,Mainland
+HOST-SUFFIX,youku.com,Mainland
+HOST-SUFFIX,ykimg.com,Mainland
+
 # UA
 USER-AGENT,hide*,Mainland
 USER-AGENT,MicroMessenger*,Mainland

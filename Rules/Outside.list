@@ -1,7 +1,7 @@
 # > Others
 HOST-SUFFIX,pstatp.com, Outside
 HOST-SUFFIX,api.trakt.tv, Outside
-HOST-SUFFIX,sto.cx, Outside
+HOST-SUFFIX,sto.cx, PROXY
 
 # > PayPal
 USER-AGENT,PayPal*,Outside

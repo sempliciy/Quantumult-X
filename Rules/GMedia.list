@@ -1,132 +1,132 @@
 # > ABC
-HOST-SUFFIX,edgedatg.com,proxy
-HOST-SUFFIX,go.com,proxy
+HOST-SUFFIX,edgedatg.com,Outside
+HOST-SUFFIX,go.com,Outside
 
 # > AbemaTV
-USER-AGENT,AbemaTV*,proxy
-HOST-SUFFIX,abema.io,proxy
-HOST-SUFFIX,ameba.jp,proxy
-HOST-SUFFIX,hayabusa.io,proxy
-HOST,abematv.akamaized.net,proxy
-HOST,ds-linear-abematv.akamaized.net,proxy
-HOST,ds-vod-abematv.akamaized.net,proxy
-HOST,linear-abematv.akamaized.net,proxy
+USER-AGENT,AbemaTV*,Outside
+HOST-SUFFIX,abema.io,Outside
+HOST-SUFFIX,ameba.jp,Outside
+HOST-SUFFIX,hayabusa.io,Outside
+HOST,abematv.akamaized.net,Outside
+HOST,ds-linear-abematv.akamaized.net,Outside
+HOST,ds-vod-abematv.akamaized.net,Outside
+HOST,linear-abematv.akamaized.net,Outside
 
 # > Amazon Prime Video
-USER-AGENT,InstantVideo.US*,proxy
-USER-AGENT,Prime%20Video*,proxy
-HOST-SUFFIX,aiv-cdn.net,proxy
-HOST-SUFFIX,amazonaws.com,proxy
-HOST-SUFFIX,amazonvideo.com,proxy
-HOST-SUFFIX,llnwd.net,proxy
+USER-AGENT,InstantVideo.US*,Outside
+USER-AGENT,Prime%20Video*,Outside
+HOST-SUFFIX,aiv-cdn.net,Outside
+HOST-SUFFIX,amazonaws.com,Outside
+HOST-SUFFIX,amazonvideo.com,Outside
+HOST-SUFFIX,llnwd.net,Outside
 
 # > Bahamut
-USER-AGENT,Anime*,proxy
-HOST-SUFFIX,bahamut.com.tw,proxy
-HOST-SUFFIX,gamer.com.tw,proxy
-HOST-SUFFIX,hinet.net,proxy
+USER-AGENT,Anime*,Outside
+HOST-SUFFIX,bahamut.com.tw,Outside
+HOST-SUFFIX,gamer.com.tw,Outside
+HOST-SUFFIX,hinet.net,Outside
 
 # > BBC
-USER-AGENT,BBCiPlayer*,proxy
-HOST-KEYWORD,bbcfmt,proxy
-HOST-KEYWORD,co.uk,proxy
-HOST-KEYWORD,uk-live,proxy
-HOST-SUFFIX,bbc.co,proxy
-HOST-SUFFIX,bbc.co.uk,proxy
-HOST-SUFFIX,bbc.com,proxy
-HOST-SUFFIX,bbci.co,proxy
-HOST-SUFFIX,bbci.co.uk,proxy
+USER-AGENT,BBCiPlayer*,Outside
+HOST-KEYWORD,bbcfmt,Outside
+HOST-KEYWORD,co.uk,Outside
+HOST-KEYWORD,uk-live,Outside
+HOST-SUFFIX,bbc.co,Outside
+HOST-SUFFIX,bbc.co.uk,Outside
+HOST-SUFFIX,bbc.com,Outside
+HOST-SUFFIX,bbci.co,Outside
+HOST-SUFFIX,bbci.co.uk,Outside
 
 # > CHOCO TV
-USER-AGENT,TwDramas*,proxy
-HOST-SUFFIX,chocotv.com.tw,proxy
+USER-AGENT,TwDramas*,Outside
+HOST-SUFFIX,chocotv.com.tw,Outside
 
 # > Disney Plus
-USER-AGENT,Disney*,proxy
-DOMAIN-SUFFIX,disneyplus.com,proxy
-DOMAIN-SUFFIX,disney-plus.net,proxy
-DOMAIN-SUFFIX,dssott.com,proxy
-DOMAIN-SUFFIX,bamgrid.com,proxy
-DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,proxy
-DOMAIN,cdn.registerdisney.go.com,proxy
+USER-AGENT,Disney*,Outside
+DOMAIN-SUFFIX,disneyplus.com,Outside
+DOMAIN-SUFFIX,disney-plus.net,Outside
+DOMAIN-SUFFIX,dssott.com,Outside
+DOMAIN-SUFFIX,bamgrid.com,Outside
+DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,Outside
+DOMAIN,cdn.registerdisney.go.com,Outside
 
 # > Now E
-USER-AGENT,PCCW*,proxy
-HOST-KEYWORD,nowe,proxy
-HOST,bcbolthboa-a.akamaihd.net,proxy
-HOST-SUFFIX,nowe.com,proxy
-HOST-SUFFIX,youboranqs01.com,proxy
+USER-AGENT,PCCW*,Outside
+HOST-KEYWORD,nowe,Outside
+HOST,bcbolthboa-a.akamaihd.net,Outside
+HOST-SUFFIX,nowe.com,Outside
+HOST-SUFFIX,youboranqs01.com,Outside
 
 # > Epicgames
-HOST-KEYWORD,epicgames,proxy
-HOST-SUFFIX,helpshift.com,proxy
+HOST-KEYWORD,epicgames,Outside
+HOST-SUFFIX,helpshift.com,Outside
 
 # > Fox+
-USER-AGENT,FOX%20NOW*,proxy
-USER-AGENT,FOXPlus*,proxy
-HOST-KEYWORD,foxplus,proxy
-HOST-SUFFIX,config.fox.com,proxy
-HOST-SUFFIX,emome.net,proxy
-HOST-SUFFIX,fox.com,proxy
-HOST-SUFFIX,foxdcg.com,proxy
-HOST-SUFFIX,foxnow.com,proxy
-HOST-SUFFIX,foxplus.com,proxy
-HOST-SUFFIX,foxplay.com,proxy
-HOST-SUFFIX,ipinfo.io,proxy
-HOST-SUFFIX,mstage.io,proxy
-HOST-SUFFIX,now.com,proxy
-HOST-SUFFIX,theplatform.com,proxy
-HOST-SUFFIX,urlload.net,proxy
+USER-AGENT,FOX%20NOW*,Outside
+USER-AGENT,FOXPlus*,Outside
+HOST-KEYWORD,foxplus,Outside
+HOST-SUFFIX,config.fox.com,Outside
+HOST-SUFFIX,emome.net,Outside
+HOST-SUFFIX,fox.com,Outside
+HOST-SUFFIX,foxdcg.com,Outside
+HOST-SUFFIX,foxnow.com,Outside
+HOST-SUFFIX,foxplus.com,Outside
+HOST-SUFFIX,foxplay.com,Outside
+HOST-SUFFIX,ipinfo.io,Outside
+HOST-SUFFIX,mstage.io,Outside
+HOST-SUFFIX,now.com,Outside
+HOST-SUFFIX,theplatform.com,Outside
+HOST-SUFFIX,urlload.net,Outside
 
 # > HBO & HBO Go
-USER-AGENT,HBO%20NOW*,proxy
-HOST-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,proxy
-HOST-SUFFIX,hbo.com,proxy
-HOST-SUFFIX,hboasia.com,proxy
-HOST-SUFFIX,hbogo.com,proxy
-HOST-SUFFIX,hbogoasia.hk,proxy
+USER-AGENT,HBO%20NOW*,Outside
+HOST-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,Outside
+HOST-SUFFIX,hbo.com,Outside
+HOST-SUFFIX,hboasia.com,Outside
+HOST-SUFFIX,hbogo.com,Outside
+HOST-SUFFIX,hbogoasia.hk,Outside
 
 # > Hulu
-USER-AGENT,Hulu*,proxy
-HOST-SUFFIX,happyon.jp,proxy
-HOST-SUFFIX,hulu.com,proxy
-HOST-SUFFIX,hulu.jp,proxy
-HOST-SUFFIX,huluim.com,proxy
-HOST-SUFFIX,hulustream.com,proxy
+USER-AGENT,Hulu*,Outside
+HOST-SUFFIX,happyon.jp,Outside
+HOST-SUFFIX,hulu.com,Outside
+HOST-SUFFIX,hulu.jp,Outside
+HOST-SUFFIX,huluim.com,Outside
+HOST-SUFFIX,hulustream.com,Outside
 
 # > Imkan
-HOST-SUFFIX,imkan.tv,proxy
+HOST-SUFFIX,imkan.tv,Outside
 
 # > JOOX
-USER-AGENT,WeMusic*,proxy
-USER-AGENT,JOOX*,proxy
-HOST-SUFFIX,joox.com,proxy
+USER-AGENT,WeMusic*,Outside
+USER-AGENT,JOOX*,Outside
+HOST-SUFFIX,joox.com,Outside
 
 # > MytvSUPER
-USER-AGENT,mytv*,proxy
-HOST-KEYWORD,nowtv100,proxy
-HOST-KEYWORD,rthklive,proxy
-HOST-SUFFIX,mytvsuper.com,proxy
-HOST-SUFFIX,tvb.com,proxy
+USER-AGENT,mytv*,Outside
+HOST-KEYWORD,nowtv100,Outside
+HOST-KEYWORD,rthklive,Outside
+HOST-SUFFIX,mytvsuper.com,Outside
+HOST-SUFFIX,tvb.com,Outside
 
 # > Pandora
-HOST-SUFFIX,pandora.com,proxy
+HOST-SUFFIX,pandora.com,Outside
 
 # > Sky GO
-USER-AGENT,skygo*,proxy
-HOST-SUFFIX,sky.com,proxy
-HOST-SUFFIX,skygo.co.nz,proxy
+USER-AGENT,skygo*,Outside
+HOST-SUFFIX,sky.com,Outside
+HOST-SUFFIX,skygo.co.nz,Outside
 
 # > SoundCloud
-USER-AGENT,SoundCloud*,proxy
+USER-AGENT,SoundCloud*,Outside
 
 # > Spotify
-USER-AGENT,Spotify*,proxy
-HOST-SUFFIX,pscdn.co,proxy
-HOST-SUFFIX,scdn.co,proxy
-HOST-SUFFIX,spoti.fi,proxy
-HOST-SUFFIX,spotify.com,proxy
-IP-CIDR,35.186.224.47/32,proxy
+USER-AGENT,Spotify*,Outside
+HOST-SUFFIX,pscdn.co,Outside
+HOST-SUFFIX,scdn.co,Outside
+HOST-SUFFIX,spoti.fi,Outside
+HOST-SUFFIX,spotify.com,Outside
+IP-CIDR,35.186.224.47/32,Outside
 
 # > viuTV
-HOST-SUFFIX,viu.tv,proxy
+HOST-SUFFIX,viu.tv,Outside

@@ -3,6 +3,14 @@ HOST-SUFFIX,pstatp.com, Outside
 HOST-SUFFIX,api.trakt.tv, Outside
 HOST-SUFFIX,sto.cx, Outside
 
+#TikTok
+HOST-SUFFIX, musical.ly, Outside
+HOST-SUFFIX, tiktokv.com, Outside
+HOST-SUFFIX, tiktokcdn.com, Outside
+HOST-SUFFIX, -tiktokcdn-com, Outside
+HOST-SUFFIX, muscdn.com, Outside
+USER-AGENT, TikTok*, Outside
+
 # > PayPal
 USER-AGENT,PayPal*,Outside
 HOST-SUFFIX,paypal.com,Outside

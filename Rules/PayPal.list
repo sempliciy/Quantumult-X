@@ -1,3 +1,4 @@
-USER-AGENT,PayPal*,proxy
-HOST-SUFFIX,paypal.com,proxy
-HOST-SUFFIX,paypalobjects.com,proxy
+USER-AGENT,PayPal*,PayPal
+DOMAIN-KEYWORD,paypal,PayPal
+DOMAIN-SUFFIX,paypal.com,PayPal
+DOMAIN-SUFFIX,paypalobjects.com,PayPal

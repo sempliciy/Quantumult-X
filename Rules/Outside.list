@@ -11,6 +11,46 @@ HOST-SUFFIX, -tiktokcdn-com, Outside
 HOST-SUFFIX, muscdn.com, Outside
 USER-AGENT, TikTok*, Outside
 
+# > Google
+DOMAIN-SUFFIX,ampproject.org,Outside
+DOMAIN-SUFFIX,appspot.com,Outside
+DOMAIN-SUFFIX,blogger.com,Outside
+DOMAIN-SUFFIX,getoutline.org,Outside
+DOMAIN-SUFFIX,gvt0.com,Outside
+DOMAIN-SUFFIX,gvt1.com,Outside
+DOMAIN-SUFFIX,gvt3.com,Outside
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Outside
+DOMAIN-KEYWORD,google,Outside
+DOMAIN-KEYWORD,blogspot,Outside
+
+# > Facebook
+DOMAIN-SUFFIX,cdninstagram.com,Outside
+DOMAIN-SUFFIX,fb.com,Outside
+DOMAIN-SUFFIX,fb.me,Outside
+DOMAIN-SUFFIX,fbaddins.com,Outside
+DOMAIN-SUFFIX,fbcdn.net,Outside
+DOMAIN-SUFFIX,fbsbx.com,Outside
+DOMAIN-SUFFIX,fbworkmail.com,Outside
+DOMAIN-SUFFIX,instagram.com,Outside
+DOMAIN-SUFFIX,m.me,Outside
+DOMAIN-SUFFIX,messenger.com,Outside
+DOMAIN-SUFFIX,oculus.com,Outside
+DOMAIN-SUFFIX,oculuscdn.com,Outside
+DOMAIN-SUFFIX,rocksdb.org,Outside
+DOMAIN-SUFFIX,whatsapp.com,Outside
+DOMAIN-SUFFIX,whatsapp.net,Outside
+DOMAIN-KEYWORD,facebook,Outside
+
+# > Twitter
+DOMAIN-SUFFIX,pscp.tv,Outside
+DOMAIN-SUFFIX,periscope.tv,Outside
+DOMAIN-SUFFIX,t.co,Outside
+DOMAIN-SUFFIX,twimg.co,Outside
+DOMAIN-SUFFIX,twimg.com,Outside
+DOMAIN-SUFFIX,twitpic.com,Outside
+DOMAIN-SUFFIX,vine.co,Outside
+DOMAIN-KEYWORD,twitter,Outside
+
 # > PayPal
 USER-AGENT,PayPal*,Outside
 HOST-SUFFIX,paypal.com,Outside
@@ -181,14 +221,6 @@ HOST-SUFFIX,humblebundle.com,Outside
 HOST-SUFFIX,steamcommunity.com,Outside
 HOST-SUFFIX,steampowered.com,Outside
 HOST-SUFFIX,steamstatic.com,Outside
-
-# > TikTok
-USER-AGENT,TikTok*,Outside
-HOST-SUFFIX,muscdn.com,Outside
-HOST-SUFFIX,musical.ly,Outside
-HOST-SUFFIX,tiktokv.com,Outside
-HOST-SUFFIX,tiktokcdn.com,Outside
-HOST-KEYWORD,-tiktokcdn-com,Outside
 
 # > Zooba
 USER-AGENT,battleroyale*,Outside

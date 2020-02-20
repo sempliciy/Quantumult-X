@@ -22,6 +22,83 @@ HOST-SUFFIX,k.hbfls.vip, AdBlock
 HOST-SUFFIX,s.tuziluoluo.com, AdBlock
 HOST-SUFFIX,img.mulanphone.cn, AdBlock
 
+# > Alibaba
+DOMAIN,optimus-ads.amap.com,AdBlock
+DOMAIN,optimus-ads.amap.com.w.alikunlun.com,AdBlock
+DOMAIN,tunion-api.m.taobao.com,AdBlock
+# > AutoHome
+DOMAIN,adproxy.autohome.com.cn,AdBlock
+DOMAIN,rd.autohome.com.cn,AdBlock
+DOMAIN,al.autohome.com.cn,AdBlock
+DOMAIN,applogapi.autohome.com.cn,AdBlock
+# > 百词斩
+DOMAIN,advertise.baicizhan.com,AdBlock
+DOMAIN,advertise.baicizhan.org,AdBlock
+# > CNTV
+DOMAIN,galaxy.bjcathay.com,AdBlock
+DOMAIN,mdrecv.app.cntvwb.cn,AdBlock
+DOMAIN,sdapprecv.app.cntvwb.cn,AdBlock
+DOMAIN,vdapprecv.app.cntvwb.cn,AdBlock
+# > 车来了
+DOMAIN,atrace.chelaile.net.cn,AdBlock
+DOMAIN,logs.chelaile.net.cn,AdBlock
+# > Hupu
+DOMAIN,adx.hupu.com,AdBlock
+DOMAIN,adx-api.hupu.com,AdBlock
+DOMAIN,goblin.hupu.com,AdBlock
+# > Kingsoft
+DOMAIN,ad-stat.ksosoft.com,AdBlock
+DOMAIN,img.auction-ads.wpscdn.cn,AdBlock
+DOMAIN,counter.kingsoft.com,AdBlock
+DOMAIN,counter.ksosoft.com,AdBlock
+DOMAIN,minfo.wps.cn,AdBlock
+DOMAIN,mobad.ijinshan.com,AdBlock
+DOMAIN,ups.ksmobile.net,AdBlock
+DOMAIN,ws.ksmobile.net,AdBlock
+# > 乐播投屏
+DOMAIN,ad.hpplay.cn,AdBlock
+DOMAIN,adcdn.hpplay.cn,AdBlock
+DOMAIN,adeng.hpplay.cn,AdBlock
+DOMAIN,rp.hpplay.cn,AdBlock
+# > MI
+DOMAIN-SUFFIX,ad.intl.xiaomi.com,AdBlock
+DOMAIN-SUFFIX,ad.xiaomi.com,AdBlock
+DOMAIN-SUFFIX,admob.xiaomi.com,AdBlock
+DOMAIN,adv.sec.intl.miui.com,AdBlock
+DOMAIN,adv.sec.miui.com,AdBlock
+# > 墨迹天气
+DOMAIN,ad.api.moji.com,AdBlock
+DOMAIN,adlaunch.moji.com,AdBlock
+DOMAIN,ads.mojicdn.com,AdBlock
+DOMAIN,v1.log.moji.com,AdBlock
+# > NetEase
+DOMAIN,ad.bn.netease.com,AdBlock
+DOMAIN,ad.yixin.im,AdBlock
+DOMAIN,admusicpic.music.126.net,AdBlock
+DOMAIN,gorgon.youdao.com,AdBlock
+DOMAIN,iadmat.nosdn.127.net,AdBlock
+DOMAIN,iadmusicmat.music.126.net,AdBlock
+DOMAIN,iadmusicmatvideo.music.126.net,AdBlock
+DOMAIN,impservice.dictapp.youdao.com,AdBlock
+DOMAIN,impservice.youdao.com,AdBlock
+DOMAIN,log.yex.youdao.com,AdBlock
+DOMAIN,log-yex.youdao.com,AdBlock
+DOMAIN,n.3g.163.com,AdBlock
+DOMAIN,nex.163.com,AdBlock
+DOMAIN,yt-adp.nosdn.127.net,AdBlock
+DOMAIN,yt-adp.ws.126.net,AdBlock
+# > 喜马拉雅
+DOMAIN,ad.ximalaya.com,AdBlock
+DOMAIN,adbs.ximalaya.com,AdBlock
+DOMAIN,adse.ximalaya.com,AdBlock
+DOMAIN,adse.wsa.ximalaya.com,AdBlock
+DOMAIN,adbehavior.wsa.ximalaya.com,AdBlock
+DOMAIN,adsebs.ximalaya.com,AdBlock
+# > 小红书
+DOMAIN,ads-img-qc.xhscdn.com,AdBlock
+DOMAIN,ads-video-qc.xhscdn.com,AdBlock
+DOMAIN,t-ads.xiaohongshu.com,AdBlock
+
 # Ads in Video apps
 # > iQIYI & PPS
 HOST-SUFFIX,a.ckm.iqiyi.com,AdBlock

@@ -24,7 +24,6 @@ DOMAIN-KEYWORD,google,Outside
 DOMAIN-KEYWORD,blogspot,Outside
 
 # > Facebook
-DOMAIN-SUFFIX,cdninstagram.com,Outside
 DOMAIN-SUFFIX,fb.com,Outside
 DOMAIN-SUFFIX,fb.me,Outside
 DOMAIN-SUFFIX,fbaddins.com,Outside

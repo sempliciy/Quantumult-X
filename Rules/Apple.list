@@ -27,5 +27,6 @@ HOST-SUFFIX,itunes.com,Apple
 HOST-SUFFIX,me.com,Apple
 HOST-SUFFIX,mzstatic.com,Apple
 HOST,api.smoot.apple.cn,Apple
+HOST,p14-buy.itunes.apple.com, Apple
 DOMAIN,www-cdn.icloud.com.akadns.net,Apple
 IP-CIDR,17.0.0.0/8,Apple

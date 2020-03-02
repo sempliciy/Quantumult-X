@@ -1,3 +1,7 @@
-USER-AGENT,SpeedTest*,SpeedTest
-HOST-KEYWORD,speedtest,SpeedTest
-HOST-SUFFIX,ooklaserver.net,SpeedTest
+# Speedtest
+USER-AGENT,SpeedTest*,Speedtest
+HOST-KEYWORD,speedtest,Speedtest
+HOST-SUFFIX,ooklaserver.net,Speedtest
+
+# Fast
+HOST-SUFFIX,fast.com,Speedtest

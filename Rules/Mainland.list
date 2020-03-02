@@ -4,6 +4,7 @@ HOST-SUFFIX,www.52shuku.me,Mainland
 # > 360
 DOMAIN-SUFFIX,qhres.com,Mainland
 DOMAIN-SUFFIX,qhimg.com,Mainland
+
 # > Akamai
 DOMAIN-SUFFIX,akadns.net,Mainland
 # DOMAIN-SUFFIX,akamai.net,Mainland
@@ -11,6 +12,7 @@ DOMAIN-SUFFIX,akadns.net,Mainland
 # DOMAIN-SUFFIX,akamaihd.net,Mainland
 # DOMAIN-SUFFIX,akamaistream.net,Mainland
 # DOMAIN-SUFFIX,akamaized.net,Mainland
+
 # > Alibaba
 USER-AGENT,%E4%BC%98%E9%85%B7*,Mainland
 DOMAIN-SUFFIX,alibaba.com,Mainland
@@ -29,29 +31,35 @@ DOMAIN-SUFFIX,ykimg.com,Mainland
 DOMAIN-SUFFIX,youku.com,Mainland
 DOMAIN-SUFFIX,xiami.com,Mainland
 DOMAIN-SUFFIX,xiami.net,Mainland
+
 # > Baidu
 DOMAIN-SUFFIX,baidu.com,Mainland
 DOMAIN-SUFFIX,baidubcr.com,Mainland
 DOMAIN-SUFFIX,bdstatic.com,Mainland
 DOMAIN-SUFFIX,yunjiasu-cdn.net,Mainland
+
 # > Blizzard
 DOMAIN-SUFFIX,blizzard.com,Mainland
 DOMAIN-SUFFIX,battle.net,Mainland
 DOMAIN,blzddist1-a.akamaihd.net,Mainland
+
 # > ByteDance
 DOMAIN-SUFFIX,feiliao.com,Mainland
 DOMAIN-SUFFIX,pstatp.com,Mainland
 DOMAIN-SUFFIX,snssdk.com,Mainland
 DOMAIN-SUFFIX,iesdouyin.com,Mainland
 DOMAIN-SUFFIX,toutiao.com,Mainland
+
 # > CCTV
 DOMAIN-SUFFIX,cctv.com,Mainland
 DOMAIN-SUFFIX,cctvpic.com,Mainland
 DOMAIN-SUFFIX,livechina.com,Mainland
+
 # > DiDi
 DOMAIN-SUFFIX,didialift.com,Mainland
 DOMAIN-SUFFIX,didiglobal.com,Mainland
 DOMAIN-SUFFIX,udache.com,Mainland
+
 # > 蛋蛋赞
 DOMAIN-SUFFIX,343480.com,Mainland
 DOMAIN-SUFFIX,baduziyuan.com,Mainland
@@ -60,53 +68,53 @@ DOMAIN-SUFFIX,czybjz.com,Mainland
 DOMAIN-SUFFIX,dandanzan.com,Mainland
 DOMAIN-SUFFIX,fjhps.com,Mainland
 DOMAIN-SUFFIX,kuyunbo.club,Mainland
+
 # > ChinaNet
 DOMAIN-SUFFIX,21cn.com,Mainland
+
 # > HunanTV
 DOMAIN-SUFFIX,hitv.com,Mainland
 DOMAIN-SUFFIX,mgtv.com,Mainland
+
 # > JD
 DOMAIN-SUFFIX,jd.com,Mainland
 DOMAIN-SUFFIX,jd.hk,Mainland
 DOMAIN-SUFFIX,jdpay.com,Mainland
 DOMAIN-SUFFIX,360buyimg.com,Mainland
+
 # > Kingsoft
 DOMAIN-SUFFIX,iciba.com,Mainland
 DOMAIN-SUFFIX,ksosoft.com,Mainland
+
 # > Meitu
 DOMAIN-SUFFIX,meitu.com,Mainland
 DOMAIN-SUFFIX,meitudata.com,Mainland
 DOMAIN-SUFFIX,meitustat.com,Mainland
 DOMAIN-SUFFIX,meipai.com,Mainland
+
 # > MI
 DOMAIN-SUFFIX,duokan.com,Mainland
 DOMAIN-SUFFIX,mi-img.com,Mainland
 DOMAIN-SUFFIX,miui.com,Mainland
 DOMAIN-SUFFIX,miwifi.com,Mainland
 DOMAIN-SUFFIX,xiaomi.com,Mainland
-# > NetEase
-USER-AGENT,NeteaseMusic*,Mainland
-USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,Mainland
-DOMAIN-SUFFIX,163.com,Mainland
-DOMAIN-SUFFIX,126.net,Mainland
-DOMAIN-SUFFIX,127.net,Mainland
-DOMAIN-SUFFIX,163yun.com,Mainland
-DOMAIN-SUFFIX,lofter.com,Mainland
-DOMAIN-SUFFIX,netease.com,Mainland
-DOMAIN-SUFFIX,ydstatic.com,Mainland
+
 # > Sina
 DOMAIN-SUFFIX,sina.com,Mainland
 DOMAIN-SUFFIX,weibo.com,Mainland
 DOMAIN-SUFFIX,weibocdn.com,Mainland
+
 # > Sohu
 DOMAIN-SUFFIX,sohu.com,Mainland
 DOMAIN-SUFFIX,sohucs.com,Mainland
 DOMAIN-SUFFIX,sohu-inc.com,Mainland
 DOMAIN-SUFFIX,v-56.com,Mainland
+
 # > Sogo
 DOMAIN-SUFFIX,sogo.com,Mainland
 DOMAIN-SUFFIX,sogou.com,Mainland
 DOMAIN-SUFFIX,sogoucdn.com,Mainland
+
 # > Steam
 DOMAIN-SUFFIX,steampowered.com,Mainland
 DOMAIN-SUFFIX,steam-chat.com,Mainland
@@ -116,6 +124,7 @@ DOMAIN-SUFFIX,steamcontent.com,Mainland
 DOMAIN-SUFFIX,steamstatic.com,Mainland
 DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,Mainland
 DOMAIN-SUFFIX,steamstat.us,Mainland
+
 # > Tencent
 USER-AGENT,MicroMessenger%20Client,Mainland
 USER-AGENT,WeChat*,Mainland
@@ -127,6 +136,7 @@ DOMAIN-SUFFIX,myqcloud.com,Mainland
 DOMAIN-SUFFIX,qq.com,Mainland
 DOMAIN-SUFFIX,tencent.com,Mainland
 DOMAIN-SUFFIX,tencent-cloud.net,Mainland
+
 # > YYeTs
 USER-AGENT,YYeTs*,Mainland
 DOMAIN-SUFFIX,jstucdn.com,Mainland
@@ -136,6 +146,7 @@ DOMAIN-SUFFIX,zmz2019.com,Mainland
 DOMAIN-SUFFIX,zmzapi.com,Mainland
 DOMAIN-SUFFIX,zmzapi.net,Mainland
 DOMAIN-SUFFIX,zmzfile.com,Mainland
+
 # > Content Delivery Network
 DOMAIN-SUFFIX,ccgslb.com,Mainland
 DOMAIN-SUFFIX,ccgslb.net,Mainland
@@ -156,6 +167,7 @@ HOST-SUFFIX,aixifan.com,Mainland
 USER-AGENT,*bili*,Mainland
 HOST-KEYWORD,bilibili,Mainland
 HOST-SUFFIX,acgvideo.com,Mainland
+HOST-SUFFIX,bilibili.com,Mainland
 HOST-SUFFIX,hdslb.com,Mainland
 
 # > iQiyi
@@ -191,7 +203,33 @@ HOST-SUFFIX,migu.cn,Mainland
 HOST-SUFFIX,miguvideo.com,Mainland
 
 # > MOOMusic
-USER-AGENT,MOO%E9%9F%B3%E4%B9%90*,Mainland
+USER-AGENT,MOO*,Mainland
+USER-AGENT,TencentMidasConnect*,Mainland
+
+# > Netease Music
+USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90,Mainland
+USER-AGENT,NeteaseMusic*,Mainland
+HOST-SUFFIX,music.126.net,Mainland
+HOST-SUFFIX,music.163.com,Mainland
+IP-CIDR,39.105.63.80/32,Mainland
+IP-CIDR,45.254.48.1/32,Mainland
+IP-CIDR,47.100.127.239/32,Mainland
+IP-CIDR,59.111.160.195/32,Mainland
+IP-CIDR,59.111.160.197/32,Mainland
+IP-CIDR,59.111.181.35/32,Mainland
+IP-CIDR,59.111.181.38/32,Mainland
+IP-CIDR,59.111.181.60/32,Mainland
+IP-CIDR,101.71.154.241/32,Mainland
+IP-CIDR,103.126.92.132/32,Mainland
+IP-CIDR,103.126.92.133/32,Mainland
+IP-CIDR,112.13.119.17/32,Mainland
+IP-CIDR,112.13.122.1/32,Mainland
+IP-CIDR,115.236.118.33/32,Mainland
+IP-CIDR,115.236.121.1/32,Mainland
+IP-CIDR,118.24.63.156/32,Mainland
+IP-CIDR,193.112.159.225/32,Mainland
+IP-CIDR,223.252.199.66/32,Mainland
+IP-CIDR,223.252.199.67/32,Mainland
 
 # > QQMusic
 USER-AGENT,QQ%e9%9f%b3%e4%b9%90*,Mainland
@@ -208,6 +246,7 @@ HOST-SUFFIX,v.qq.com,Mainland
 HOST-SUFFIX,video.qq.com,Mainland
 
 # > Xiami Music
+USER-AGENT,walkman*,Mainland
 USER-AGENT,xiami*,Mainland
 HOST-SUFFIX,xiami.com,Mainland
 HOST-SUFFIX,xiami.net,Mainland

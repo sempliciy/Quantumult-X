@@ -314,6 +314,9 @@ HOST,client.amplifi.com,Mainland
 HOST-SUFFIX,alphassl.com,Mainland
 HOST-SUFFIX,edu.cn,Mainland
 
+# > Steam
+HOST-SUFFIX,steamcontent.com,Mainland
+
 # > TeamViewer
 IP-CIDR,185.188.32.0/24,Mainland
 IP-CIDR,185.188.33.0/24,Mainland
@@ -342,6 +345,7 @@ HOST-SUFFIX,air-matters.io,Mainland
 HOST-SUFFIX,airhotels.cn,Mainland
 HOST-SUFFIX,akadns.net,Mainland
 HOST-SUFFIX,aliapp.org,Mainland
+HOST-SUFFIX,alibabacloud.com,Mainland
 HOST-SUFFIX,alicdn.com,Mainland
 HOST-SUFFIX,alipay.com,Mainland
 HOST-SUFFIX,alipayobjects.com,Mainland
@@ -349,7 +353,6 @@ HOST-SUFFIX,aliyun.com,Mainland
 HOST-SUFFIX,amap.com,Mainland
 HOST-SUFFIX,apache.org,Mainland
 HOST-SUFFIX,api.crisp.chat,Mainland
-HOST-SUFFIX,api.termius.com,Mainland
 HOST-SUFFIX,appshike.com,Mainland
 HOST-SUFFIX,autohome.com.cn,Mainland
 HOST-SUFFIX,autonavi.com,Mainland
@@ -472,6 +475,7 @@ HOST-SUFFIX,pgyer.com,Mainland
 HOST-SUFFIX,pniao.com,Mainland
 HOST-SUFFIX,privatehd.to,Mainland
 HOST-SUFFIX,pstatp.com,Mainland
+HOST-SUFFIX,pt.m-team.cc,Mainland
 HOST-SUFFIX,qbox.me,Mainland
 HOST-SUFFIX,qcloud.com,Mainland
 HOST-SUFFIX,qdaily.com,Mainland
@@ -525,7 +529,6 @@ HOST-SUFFIX,tmzvps.com,Mainland
 HOST-SUFFIX,trello.com,Mainland
 HOST-SUFFIX,trellocdn.com,Mainland
 HOST-SUFFIX,totheglory.im,Mainland
-HOST-SUFFIX,tp.m-team.cc,Mainland
 HOST-SUFFIX,ttmeiju.com,Mainland
 HOST-SUFFIX,tudou.com,Mainland
 HOST-SUFFIX,udache.com,Mainland
@@ -573,11 +576,8 @@ HOST-SUFFIX,zhihu.com,Mainland
 HOST-SUFFIX,zhimg.com,Mainland
 HOST-SUFFIX,zimuzu.tv,Mainland
 HOST-SUFFIX,zmz002.com,Mainland
-DOMAIN,download.jetbrains.com,DIRECT
-DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
-
+HOST-SUFFIX,cn,Mainland
 IP-CIDR,1.255.62.0/24,Mainland
-IP-CIDR,119.28.28.28/32,Mainland
 
 # GEOIP 
 GEOIP,CN,Mainland

@@ -88,12 +88,9 @@ HOST-SUFFIX,go.com,Outside
 # > AbemaTV
 USER-AGENT,AbemaTV*,Outside
 HOST-SUFFIX,abema.io,Outside
+HOST-SUFFIX,akamaized.net,Outside
 HOST-SUFFIX,ameba.jp,Outside
 HOST-SUFFIX,hayabusa.io,Outside
-HOST,abematv.akamaized.net,Outside
-HOST,ds-linear-abematv.akamaized.net,Outside
-HOST,ds-vod-abematv.akamaized.net,Outside
-HOST,linear-abematv.akamaized.net,Outside
 
 # > Amazon Prime Video
 USER-AGENT,InstantVideo.US*,Outside
@@ -212,7 +209,11 @@ HOST-SUFFIX,spotify.com,Outside
 IP-CIDR,35.186.224.47/32,Outside
 
 # > viuTV
+USER-AGENT,ViuTV*,Outside
+HOST-SUFFIX,cloudfront.net,Outside
+HOST-SUFFIX,viu.com,Outside
 HOST-SUFFIX,viu.tv,Outside
+HOST-SUFFIX,viu.now.com,Outside
 
 # > UA
 USER-AGENT,%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5*,Outside

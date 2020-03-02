@@ -11,6 +11,33 @@ HOST-SUFFIX, -tiktokcdn-com, Outside
 HOST-SUFFIX, muscdn.com, Outside
 USER-AGENT, TikTok*, Outside
 
+# > Microsoft
+USER-AGENT,Microsoft*,Outside
+HOST-KEYWORD,microsoft,Outside
+HOST-SUFFIX,ms,Outside
+HOST-SUFFIX,bing.com,Outside
+HOST-SUFFIX,bing.net,Outside
+HOST-SUFFIX,hotmail.com,Outside
+HOST-SUFFIX,live.com,Outside
+HOST-SUFFIX,live.net,Outside
+HOST-SUFFIX,microsofttranslator.com,Outside
+HOST-SUFFIX,msauth.net,Outside
+HOST-SUFFIX,msecnd.net,Outside
+HOST-SUFFIX,msocdn.com,Outside
+HOST-SUFFIX,msedge.net,Outside
+HOST-SUFFIX,msn.com,Outside
+HOST-SUFFIX,office.com,Outside
+HOST-SUFFIX,office.net,Outside
+HOST-SUFFIX,office365.com,Outside
+HOST-SUFFIX,onenote.com,Outside 
+HOST-SUFFIX,onenote.net,Outside
+HOST-SUFFIX,outlook.com,Outside
+HOST-SUFFIX,visualstudio.com,Outside
+HOST-SUFFIX,windows.com,Outside
+HOST-SUFFIX,windows.net,Outside
+HOST-SUFFIX,xbox.com,Outside
+HOST-SUFFIX,xboxlive.com,Outside
+
 # > Google
 DOMAIN-SUFFIX,ampproject.org,Outside
 DOMAIN-SUFFIX,appspot.com,Outside

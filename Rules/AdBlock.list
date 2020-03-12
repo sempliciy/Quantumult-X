@@ -1,6 +1,8 @@
 # Ads in Games
-HOST-SUFFIX,rt.applvn.com, AdBlock
+HOST-SUFFIX,applvn.com, AdBlock
+HOST-SUFFIX,applvn.com, AdBlock
 HOST-SUFFIX,ads-bi.zenkube.com, AdBlock
+HOST-SUFFIX,ad-mediation.tuanguwen.com, AdBlock
 
 # Ads in Reader 
 HOST-SUFFIX,m.ws83c.cn, AdBlock

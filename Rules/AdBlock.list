@@ -1,4 +1,5 @@
-HOST-KEYWORD,analysys,AdBlock# Ads in Games
+# Ads in Games
+HOST-KEYWORD,analysys,AdBlock
 HOST-SUFFIX,applvn.com, AdBlock
 HOST-SUFFIX,applvn.com, AdBlock
 HOST-SUFFIX,ads-bi.zenkube.com, AdBlock

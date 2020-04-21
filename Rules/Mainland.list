@@ -39,9 +39,11 @@ DOMAIN-SUFFIX,bdstatic.com,Mainland
 DOMAIN-SUFFIX,yunjiasu-cdn.net,Mainland
 
 # > Blizzard
-DOMAIN-SUFFIX,blizzard.com,Mainland
-DOMAIN-SUFFIX,battle.net,Mainland
-DOMAIN,blzddist1-a.akamaihd.net,Mainland
+USER-AGENT,hearthstone*,Mainland
+HOST,cdp.cloud.unity3d.com,Mainland
+HOST-SUFFIX,battle.net,Mainland
+HOST-SUFFIX,battlenet.com,Mainland
+HOST-SUFFIX,blizzard.com,Mainland
 
 # > ByteDance
 DOMAIN-SUFFIX,feiliao.com,Mainland

@@ -43,12 +43,16 @@ HOST-SUFFIX,chocotv.com.tw,Outside
 
 # > Disney Plus
 USER-AGENT,Disney*,Outside
-DOMAIN-SUFFIX,disneyplus.com,Outside
-DOMAIN-SUFFIX,disney-plus.net,Outside
-DOMAIN-SUFFIX,dssott.com,Outside
-DOMAIN-SUFFIX,bamgrid.com,Outside
-DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,Outside
-DOMAIN,cdn.registerdisney.go.com,Outside
+HOST,cdn.registerdisney.go.com,Outside
+HOST,cdn.cdn.unid.go.com,Outside
+HOST-SUFFIX,bamgrid.com,Outside
+HOST-SUFFIX,braze.com,Outside
+HOST-SUFFIX,conviva.com,Outside
+HOST-SUFFIX,disney.demdex.net,Outside
+HOST-SUFFIX,disneyplus.com,Outside
+HOST-SUFFIX,disney-plus.net,Outside
+HOST-SUFFIX,dssott.com,Outside
+HOST-SUFFIX,execute-api.us-east-1.amazonaws.com,Outside
 
 # > Now E
 USER-AGENT,PCCW*,Outside
@@ -128,5 +132,16 @@ HOST-SUFFIX,spoti.fi,Outside
 HOST-SUFFIX,spotify.com,Outside
 IP-CIDR,35.186.224.47/32,Outside
 
-# > viuTV
+# > ViuTV
+USER-AGENT,ViuTV*,Outside
+HOST-SUFFIX,bootstrapcdn.com,Outside
+HOST-SUFFIX,cloudfront.net,Outside
+HOST-SUFFIX,cognito-identity.us-east-1.amazonaws.com,Outside
+HOST-SUFFIX,firebaseio.com,Outside
+HOST-SUFFIX,jwpcdn.com,Outside
+HOST-SUFFIX,jwplayer.com,Outside
+HOST-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,Outside
+HOST-SUFFIX,nowe.com,Outside
+HOST-SUFFIX,viu.com,Outside
 HOST-SUFFIX,viu.tv,Outside
+HOST-SUFFIX,viu.now.com,Outside

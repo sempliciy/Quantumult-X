@@ -56,6 +56,8 @@ HOST-SUFFIX,img.huademy.com, AdBlock
 HOST-SUFFIX,api.ifeitech.com, AdBlock
 HOST-SUFFIX,8i.hi8c.cn, AdBlock
 HOST-SUFFIX,mo.nunxi.xyz, AdBlock
+HOST-SUFFIX,fugou.hhtxsy.com, AdBlock
+HOST-SUFFIX,k.gzbld.net, AdBlock
 
 # > Alibaba
 DOMAIN,optimus-ads.amap.com,AdBlock

@@ -49,6 +49,11 @@ HOST-SUFFIX,mi.gdt.qq.com, AdBlock
 HOST-SUFFIX,huatuocode.weiyun.com, AdBlock
 HOST-SUFFIX,gdt.qq.com, AdBlock
 HOST-SUFFIX,35kds.com, AdBlock
+HOST-SUFFIX,e.ujbmvap.cn, AdBlock
+HOST-SUFFIX,v.com.5p67n.cn, AdBlock
+HOST-SUFFIX,api.wfxll.com, AdBlock
+HOST-SUFFIX,img.huademy.com, AdBlock
+HOST-SUFFIX,api.ifeitech.com, AdBlock
 
 # > Alibaba
 DOMAIN,optimus-ads.amap.com,AdBlock

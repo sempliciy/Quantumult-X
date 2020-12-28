@@ -1,6 +1,6 @@
 /*
 [rewrite_local]
-^https://api4\.bybutter\.com(/v4/users/me|/v4/shop/.+) url script-response-body bybutter.js
+^https://api4\.bybutter\.com(/v4/users/me|/v4/shop/.+) url script-response-body https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/bybutter.js
 [mitm]
 hostname = api4.bybutter.com,
 */

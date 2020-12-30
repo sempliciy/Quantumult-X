@@ -21,7 +21,7 @@ const GG=''//默认为换行，也可以将需要隔开的符号填写在''内
 
 let K = 1;//从哪个账号开始
 
-let Z = 20;//到哪个账号结束
+let Z = 13;//到哪个账号结束
 
 
 
@@ -39,7 +39,7 @@ const $ = Env(jsname);
 $.idx = ($.idx = ($.getval('qeSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
 const notify = $.isNode() ? require("./sendNotify") : "";
 
-
+let R=K
 
 const qqreadbdArr = [];
 let qqreadbodyVal = "";
@@ -128,13 +128,32 @@ if ($.isNode()) {
 }
 
 
+
+
+
+if (Z<K){
+    $.msg('⚠️提示：请不要调皮🐶')
+   $.done();
+}
+
 all();
 function all() {
 
-if (!qqreadbdArr[Z-1]) {
-    $.msg(jsname+Z+'⚠️打印失败', '提示：请先获取ck，并在boxjs里设置好账号数')
+if (!qqreadbdArr[K-1]) {
+if (K>R)
+    $.msg(jsname+R+'到'+(K-1)+'打印成功'+K+'到'+Z+'打印失败', '⚠️提示：请先获取'+K+'到'+Z+'的ck','并在boxjs里设置好账号数')
+
+if (K==R&&Z>R)
+    $.msg(jsname+K+'到'+Z+'打印失败', '⚠️提示：请先获取'+K+'到'+Z+'的ck','并在boxjs里设置好账号数')
+
+
+if (Z==R)
+    $.msg(jsname+K+'打印失败', '⚠️提示：请先获取'+K+'的ck','并在boxjs里设置好账号数')
+
    $.done();
-  };
+  }
+
+
 
 
   qqreadbodyVal = qqreadbdArr[K-1];
@@ -160,8 +179,12 @@ if(timeheader==1)console.log(qqreadtimeheaderVal+GG)
               K += 1;
               all();
 }    else if (K == Z ) {
-              
+          let F=Z-R+1
+              $.msg(jsname+R+'到'+Z+',ck打印成功','✅已打印'+F+'个ck',)
+
               $.done();
+
+
   }
  }
 },

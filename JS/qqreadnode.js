@@ -15,6 +15,7 @@ boxjs链接      https://raw.githubusercontent.com/ziye12/JavaScript/master/Task
 12.28 解决通知问题，notifyInterval     0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
 12.28 增加 无通知时打印通知
 12.29 修复手机通知问题，增加外部推送开关
+1.1 修复签到问题
 
 
 ⚠️cookie获取方法：
@@ -65,7 +66,7 @@ const notifyInterval = 0;// 0为关闭通知，1为所有通知，2为12 23 点�
 const logs = 0;   //0为关闭日志，1为开启
 const maxtime = 10//每日上传时长限制，默认20小时
 const wktimess = 1200//周奖励领取标准，默认1200分钟
-const CASH = 10;//提现金额 可设置0 1 2 10 30 50 100  设置0关闭
+const CASH = 0;//提现金额 可设置0 1 2 10 30 50 100  设置0关闭
 
 
 //在``里面填写，多账号换行
@@ -108,9 +109,6 @@ let qqreadtimeheaderVal=`{"ywsession":"bz9uldaahv55q5zdyxs5k4b2u0xp1vnu","Cookie
 {"ywsession":"8dwqkhclwfl30kcz55npumcr70a1e0ks","Cookie":"ywguid=3207596896;ywkey=ywUWL1aTd41Q;platform=ios;channel=mqqmina;mpVersion=0.37.0;qq_ver=8.5.0;os_ver=iOS 14.2;mpos_ver=1.23.0;platform=ios;openid=F15BDBD9FD93190D90B2A588F190E217","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1206 Darwin/20.1.0","Referer":"https://appservice.qq.com/1110657249/0.37.0/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.37.0"}
 {"ywsession":"6rspvifi2jn1idyukolz6yg6y4irlmyh","Cookie":"ywguid=257769795;ywkey=ywJ3l623EDMC;platform=ios;channel=mqqmina;mpVersion=0.37.0;qq_ver=8.5.0;os_ver=iOS 14.2;mpos_ver=1.23.0;platform=ios;openid=BA99F2A77895F2B9383CFCA999C224CA","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1206 Darwin/20.1.0","Referer":"https://appservice.qq.com/1110657249/0.37.0/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.37.0"}
 {"ywsession":"7omqk19m1gvqolnoibmirs0ooskiv64a","Cookie":"ywguid=577268057;ywkey=ywbNyiEqkKq9;platform=ios;channel=mqqmina;mpVersion=0.38.1;qq_ver=8.5.0;os_ver=iOS 14.2;mpos_ver=1.23.0;platform=ios;openid=577268057","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1206 Darwin/20.1.0","Referer":"https://appservice.qq.com/1110657249/0.38.1/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.38.1"}
-
-
-
 
 let QQ_READ_COOKIES = {  
   "qqreadbodyVal": qqreadbodyVal.split('\n'),
@@ -362,16 +360,16 @@ function qqreaddayread() {
 function qqreadsign() {
   return new Promise((resolve, reject) => {
     const toqqreadsignurl = {
-      url: "https://mqqapi.reader.qq.com/mqq/red_packet/user/clock_in/page",
+      url: "https://mqqapi.reader.qq.com/mqq/red_packet/user/clock_in",
       headers: JSON.parse(qqreadtimeheaderVal),
       timeout: 60000,
     };
     $.get(toqqreadsignurl, (error, response, data) => {
       if (logs) $.log(`${O}, 金币签到: ${data}`);
       sign = JSON.parse(data);
-      if (sign.data.videoDoneFlag) {
-        tz += `【金币签到】:获得${sign.data.todayAmount}金币\n`;
-		kz += `【金币签到】:获得${sign.data.todayAmount}金币\n`;
+      if (sign.code == 0) {
+        tz += `【金币签到】:获得${sign.data.amount}金币\n`;
+		kz += `【金币签到】:获得${sign.data.amount}金币\n`;
       }
       resolve();
     });

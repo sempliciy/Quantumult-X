@@ -15,6 +15,7 @@ boxjs链接      https://raw.githubusercontent.com/ziye12/JavaScript/master/Task
 12.28 解决通知问题，notifyInterval     0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
 12.28 增加 无通知时打印通知
 12.29 修复手机通知问题，增加外部推送开关
+1.1 修复签到问题
 
 
 ⚠️cookie获取方法：
@@ -65,7 +66,8 @@ const notifyInterval = 0;// 0为关闭通知，1为所有通知，2为12 23 点�
 const logs = 0;   //0为关闭日志，1为开启
 const maxtime = 10//每日上传时长限制，默认20小时
 const wktimess = 1200//周奖励领取标准，默认1200分钟
-const CASH = 10;//提现金额 可设置0 1 2 10 30 50 100  设置0关闭
+const CASH = 0;//提现金额 可设置0 1 2 10 30 50 100  设置0关闭
+
 
 //在``里面填写，多账号换行
 let qqreadbodyVal=`{"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.5.0","os_ver":"iOS 14.4","mp_ver":"0.38.2","mpos_ver":"1.23.0","brand":"iPhone","model":"iPhone 12 mini<iPhone13,1>","screenWidth":375,"screenHeight":812,"windowWidth":375,"windowHeight":729,"openid":"EE7C09C817F608D1E41A795A6224B316","guid":58359736,"session":"bz9uldaahv55q5zdyxs5k4b2u0xp1vnu","scene":3003,"source":-1,"hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"bookStore_newCI_unit_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"182623","cid":"1"},"dis":1609119357152,"ext6":30,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"182623","bookStatus":1,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"3003_182623"}]}
@@ -106,8 +108,7 @@ let qqreadtimeheaderVal=`{"ywsession":"bz9uldaahv55q5zdyxs5k4b2u0xp1vnu","Cookie
 {"ywsession":"q1m0szenww3t7lmg3x6fyg4ehf029kye","Cookie":"ywguid=3411210025;ywkey=yw7zXYbLtA1X;platform=ios;channel=mqqmina;mpVersion=0.37.0;qq_ver=8.5.0;os_ver=iOS 14.2;mpos_ver=1.23.0;platform=ios;openid=0334B80A75F7ED48F8E6FD093874F9F9","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1206 Darwin/20.1.0","Referer":"https://appservice.qq.com/1110657249/0.37.0/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.37.0"}
 {"ywsession":"8dwqkhclwfl30kcz55npumcr70a1e0ks","Cookie":"ywguid=3207596896;ywkey=ywUWL1aTd41Q;platform=ios;channel=mqqmina;mpVersion=0.37.0;qq_ver=8.5.0;os_ver=iOS 14.2;mpos_ver=1.23.0;platform=ios;openid=F15BDBD9FD93190D90B2A588F190E217","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1206 Darwin/20.1.0","Referer":"https://appservice.qq.com/1110657249/0.37.0/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.37.0"}
 {"ywsession":"6rspvifi2jn1idyukolz6yg6y4irlmyh","Cookie":"ywguid=257769795;ywkey=ywJ3l623EDMC;platform=ios;channel=mqqmina;mpVersion=0.37.0;qq_ver=8.5.0;os_ver=iOS 14.2;mpos_ver=1.23.0;platform=ios;openid=BA99F2A77895F2B9383CFCA999C224CA","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1206 Darwin/20.1.0","Referer":"https://appservice.qq.com/1110657249/0.37.0/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.37.0"}
-{"ywsession":"7omqk19m1gvqolnoibmirs0ooskiv64a","Cookie":"ywguid=577268057;ywkey=ywbNyiEqkKq9;platform=ios;channel=mqqmina;mpVersion=0.38.1;qq_ver=8.5.0;os_ver=iOS 14.2;mpos_ver=1.23.0;platform=ios;openid=577268057","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1206 Darwin/20.1.0","Referer":"https://appservice.qq.com/1110657249/0.38.1/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.38.1"}`
-
+{"ywsession":"7omqk19m1gvqolnoibmirs0ooskiv64a","Cookie":"ywguid=577268057;ywkey=ywbNyiEqkKq9;platform=ios;channel=mqqmina;mpVersion=0.38.1;qq_ver=8.5.0;os_ver=iOS 14.2;mpos_ver=1.23.0;platform=ios;openid=577268057","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1206 Darwin/20.1.0","Referer":"https://appservice.qq.com/1110657249/0.38.1/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.38.1"}
 
 let QQ_READ_COOKIES = {  
   "qqreadbodyVal": qqreadbodyVal.split('\n'),
@@ -120,6 +121,7 @@ let QQ_READ_COOKIES = {
 !(async () => {
 
   await all();
+  
   
 })()
     .catch((e) => {
@@ -156,18 +158,18 @@ async function all() {
 	await qqreadpick();//领周时长奖励
 	}	
     await qqreadtask();//任务列表
-    if (task.data.taskList[0].doneFlag == 0) {
+    if (task.data && ljyd.doneFlag == 0) {
     await qqreaddayread();//阅读任务
      }	 	 
-    if (task.data.taskList[1].doneFlag == 0&&config.data && config.data.pageParams.todayReadSeconds / 60 >= 1 ) {     
+    if (ydrw.doneFlag == 0&&config.data && config.data.pageParams.todayReadSeconds / 60 >= 1 ) {     
       await qqreadssr1();//阅读金币1	  
     }
-	if (task.data.taskList[2].doneFlag == 0) {
+	if (task.data && dk.doneFlag == 0) {
       await qqreadsign();//金币签到
       await qqreadtake();//阅豆签到
     }	
     await $.wait(4000)	
-	if (task.data.taskList[1].doneFlag == 0&&config.data && config.data.pageParams.todayReadSeconds / 60 >= 30 ) {
+	if (ydrw.doneFlag == 0&&config.data && config.data.pageParams.todayReadSeconds / 60 >= 30 ) {
       await qqreadssr2();//阅读金币2
 	  await $.wait(4000);
 	  await qqreadssr3();//阅读金币3
@@ -179,13 +181,13 @@ async function all() {
       }		
       await qqreadtrans();//今日收益累计
     }	
-    if (task.data.taskList[2].doneFlag == 0) {
+    if (task.data && dk.doneFlag == 0) {
       await qqreadsign2();}//签到翻倍    	
-    if (task.data.taskList[3].doneFlag == 0) {
+    if (task.data && sp.doneFlag == 0) {
       await qqreadvideo();//视频奖励
     }
      }
-
+ 
 
      if (BOX == 1){
 	
@@ -194,7 +196,7 @@ async function all() {
     await qqreadtrack();//更新
   }
     await qqreadtask();//任务列表
-    if (task.data&&task.data.taskList[0].doneFlag == 0) {
+    if (task.data && ljyd.doneFlag == 0) {
     await qqreaddayread();//阅读任务
      }
 	 if (task.data&&task.data.treasureBox.timeInterval<=10000) {
@@ -206,8 +208,8 @@ async function all() {
       await qqreadbox2();//宝箱翻倍
 	  }	
 	}
-	 
       await showmsg();//通知	
+      
   }
 }
 
@@ -304,26 +306,33 @@ function qqreadtask() {
     $.get(toqqreadtaskurl, (error, response, data) => {
       if (logs) $.log(`${O}, 任务列表: ${data}`);
       task = JSON.parse(data);
-      
-      tz +=
-          `【现金余额】:${(task.data.user.amount / 10000).toFixed(2)}元\n` +
-          `【第${task.data.invite.issue}期】:时间${task.data.invite.dayRange}\n` +
-          ` 已邀请${task.data.invite.inviteCount}人，再邀请${task.data.invite.nextInviteConfig.count}人获得${task.data.invite.nextInviteConfig.amount}金币\n` +
-          `【${task.data.taskList[0].title}】:${task.data.taskList[0].amount}金币,${task.data.taskList[0].actionText}\n` +
-          `【${task.data.taskList[1].title}】:${task.data.taskList[1].amount}金币,${task.data.taskList[1].actionText}\n` +
-          `【${task.data.taskList[2].title}】:${task.data.taskList[2].amount}金币,${task.data.taskList[2].actionText}\n` +
-          `【${task.data.taskList[3].title}】:${task.data.taskList[3].amount}金币,${task.data.taskList[3].actionText}\n` +
-          `【宝箱任务${task.data.treasureBox.count + 1}】:${
-              task.data.treasureBox.tipText
-          }\n` +
-          `【${task.data.fans.title}】:${task.data.fans.fansCount}个好友,${task.data.fans.todayAmount}金币\n`;
-		  
-		  kz +=
+   dk = task.data.taskList.find(item => item.type === 200);
+ ljyd = task.data.taskList.find(item => item.type === 210);
+ ydrw = task.data.taskList.find(item => item.type === 220);
+   sp = task.data.taskList.find(item => item.type === 230);
+
+if (task.data.invite.nextInviteConfig){
+tz +=
+        `【现金余额】:${(task.data.user.amount / 10000).toFixed(2)}元\n` +
+        `【第${task.data.invite.issue}期】:时间${task.data.invite.dayRange}\n` +
+        ` 已邀请${task.data.invite.inviteCount}人，再邀请${task.data.invite.nextInviteConfig.count}人获得${task.data.invite.nextInviteConfig.amount}金币\n` +
+        `【${dk.title}】:${dk.amount}金币,${dk.actionText}\n` +
+        `【${ljyd.title}】:${ljyd.amount}金币,${ljyd.actionText}\n` +
+        `【${ydrw.title}】:${ydrw.amount}金币,${ydrw.actionText}\n` +
+        `【${sp.title}】:${sp.amount}金币,${sp.actionText}\n` +
+        `【宝箱任务${task.data.treasureBox.count + 1}】:${
+          task.data.treasureBox.tipText
+        }\n` +
+        `【${task.data.fans.title}】:${task.data.fans.fansCount}个好友,${task.data.fans.todayAmount}金币\n`;
+}
+
+      kz +=
           `【现金余额】:${(task.data.user.amount / 10000).toFixed(2)}元\n` +
           `【宝箱任务${task.data.treasureBox.count + 1}】:${
             task.data.treasureBox.timeInterval/1000
         }秒后领取\n` +
           `【已开宝箱】:${task.data.treasureBox.count}个\n`;
+
       resolve();
     });
   });
@@ -351,16 +360,16 @@ function qqreaddayread() {
 function qqreadsign() {
   return new Promise((resolve, reject) => {
     const toqqreadsignurl = {
-      url: "https://mqqapi.reader.qq.com/mqq/red_packet/user/clock_in/page",
+      url: "https://mqqapi.reader.qq.com/mqq/red_packet/user/clock_in",
       headers: JSON.parse(qqreadtimeheaderVal),
       timeout: 60000,
     };
     $.get(toqqreadsignurl, (error, response, data) => {
       if (logs) $.log(`${O}, 金币签到: ${data}`);
       sign = JSON.parse(data);
-      if (sign.data.videoDoneFlag) {
-        tz += `【金币签到】:获得${sign.data.todayAmount}金币\n`;
-		kz += `【金币签到】:获得${sign.data.todayAmount}金币\n`;
+      if (sign.code == 0) {
+        tz += `【金币签到】:获得${sign.data.amount}金币\n`;
+		kz += `【金币签到】:获得${sign.data.amount}金币\n`;
       }
       resolve();
     });

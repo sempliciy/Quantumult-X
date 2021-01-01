@@ -62,7 +62,7 @@ let task ,tz, kz,config = '';
 console.log(`\n========= 脚本执行时间(TM)：${new Date(new Date().getTime() + 0 * 60 * 60 * 1000).toLocaleString('zh', {hour12: false})} =========\n`)
 const notify = $.isNode() ? require("./sendNotify") : "";
 const notifyttt = 0// 0为关闭外部推送，1为12 23 点外部推送
-const notifyInterval = 0;// 0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
+const notifyInterval = 2;// 0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
 const logs = 0;   //0为关闭日志，1为开启
 const maxtime = 10//每日上传时长限制，默认20小时
 const wktimess = 1200//周奖励领取标准，默认1200分钟
@@ -142,7 +142,7 @@ async function all() {
     qqreadbodyVal = QQ_READ_COOKIES.qqreadbodyVal[i];
 	qqreadtimeurlVal = QQ_READ_COOKIES.qqreadtimeurlVal[i];   
     qqreadtimeheaderVal = QQ_READ_COOKIES.qqreadtimeheaderVal[i];    
-    O=(`${jsname+(i + 1)}🔔`);
+    O=(`${jsname+(i + 1)}🔔`);
     tz= '';
 	kz= '';	
 	if (BOX == 0){

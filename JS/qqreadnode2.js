@@ -77,7 +77,7 @@ const notifyInterval = 0;// 0为关闭通知，1为所有通知，2为12 23 点�
 const logs = 0;   //0为关闭日志，1为开启
 const maxtime = 10//每日上传时长限制，默认20小时
 const wktimess = 1200//周奖励领取标准，默认1200分钟
-let CASH = 0;
+let CASH = 10;
 
 
 //⚠️固定ck则在``里面填写ck，多账号换行

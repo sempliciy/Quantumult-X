@@ -82,8 +82,7 @@ const maxtime = 10//每日上传时长限制，默认20小时
 const wktimess = 1200//周奖励领取标准，默认1200分钟
 let CASH = 10;
 
-//在``里面填写，多账号换行
- let qqreadbodyVal=`{"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.5.0","os_ver":"iOS 14.4","mp_ver":"0.38.2","mpos_ver":"1.23.0","brand":"iPhone","model":"iPhone 12 mini<iPhone13,1>","screenWidth":375,"screenHeight":812,"windowWidth":375,"windowHeight":729,"openid":"EE7C09C817F608D1E41A795A6224B316","guid":58359736,"session":"bz9uldaahv55q5zdyxs5k4b2u0xp1vnu","scene":3003,"source":-1,"hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"bookStore_newCI_unit_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"182623","cid":"1"},"dis":1609119357152,"ext6":30,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"182623","bookStatus":1,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"3003_182623"}]}
+let qqreadbodyVal = `{"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.5.0","os_ver":"iOS 14.4","mp_ver":"0.38.2","mpos_ver":"1.23.0","brand":"iPhone","model":"iPhone 12 mini<iPhone13,1>","screenWidth":375,"screenHeight":812,"windowWidth":375,"windowHeight":729,"openid":"EE7C09C817F608D1E41A795A6224B316","guid":58359736,"session":"bz9uldaahv55q5zdyxs5k4b2u0xp1vnu","scene":3003,"source":-1,"hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"bookStore_newCI_unit_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"182623","cid":"1"},"dis":1609119357152,"ext6":30,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"182623","bookStatus":1,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"3003_182623"}]}
  {"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.5.0","os_ver":"iOS 14.4","mp_ver":"0.40.0","mpos_ver":"1.23.0","brand":"iPhone","model":"iPhone 12 mini<iPhone13,1>","screenWidth":375,"screenHeight":812,"windowWidth":375,"windowHeight":729,"openid":"DEB4C750895E2C9497B165AF176940C5","guid":553095493,"session":"5ev9azrvqwnd00m6hyrp6kom1ejokubp","scene":3003,"source":-1,"hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"bookStore_newCI_unit_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"466304","cid":"1"},"dis":1609377933658,"ext6":28,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"466304","bookStatus":1,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"3003_466304"}]}
  {"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.4.17","os_ver":"iOS 14.4","mp_ver":"0.35.1","mpos_ver":"1.21.0","brand":"iPhone","model":"iPhone 12 mini<iPhone13,1>","screenWidth":375,"screenHeight":812,"windowWidth":375,"windowHeight":729,"openid":"EE94B633B91FCC4024268B09FFEFBB79","guid":775735184,"session":"d5wcpbue28du2fs2ziq1azo600vbh3c4","scene":3001,"source":-1,"hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"bookStore_newCI_unit_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"25304258","cid":"1"},"dis":1608257770605,"ext6":23,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"25304258","bookStatus":1,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"3001_25304258"}]}
  {"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.4.17","os_ver":"iOS 14.4","mp_ver":"0.35.1","mpos_ver":"1.21.0","brand":"iPhone","model":"iPhone 12 mini<iPhone13,1>","screenWidth":375,"screenHeight":812,"windowWidth":375,"windowHeight":729,"openid":"66CDD67300DF08173F47EBED5DB829A1","guid":630582626,"session":"tncye4cgep44qeqh89tl5p6lpfeqeebu","scene":3001,"source":-1,"hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"bookStore_newCI_unit_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"855951","cid":"1"},"dis":1608257903177,"ext6":19,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"855951","bookStatus":1,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"3001_855951"}]}
@@ -97,8 +96,8 @@ let CASH = 10;
  {"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.5.0","os_ver":"iOS 14.2","mp_ver":"0.37.0","mpos_ver":"1.23.0","brand":"iPhone","model":"iPad Pro 9.7-inch (Cellular)<iPad6,4>","screenWidth":768,"screenHeight":1024,"windowWidth":768,"windowHeight":974,"openid":"BA99F2A77895F2B9383CFCA999C224CA","guid":257769795,"session":"6rspvifi2jn1idyukolz6yg6y4irlmyh","scene":1007,"source":"wza0003wzb0003","hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"ChristmasCard_pageClose_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"25628459","cid":"1"},"dis":1608723753173,"ext6":68,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"25628459","bookStatus":0,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"1007_25628459"}]}
  {"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.5.0","os_ver":"iOS 14.2","mp_ver":"0.38.1","mpos_ver":"1.23.0","brand":"iPhone","model":"iPhone 11<iPhone12,1>","screenWidth":414,"screenHeight":896,"windowWidth":414,"windowHeight":813,"openid":"577268057","guid":577268057,"session":"7omqk19m1gvqolnoibmirs0ooskiv64a","scene":1007,"source":"wza0004wzb0005","hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"bookStore_newCI_unit_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"181810","cid":"1"},"dis":1608819768726,"ext6":72,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"181810","bookStatus":1,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"1007_181810"}]}
  {"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.5.0","os_ver":"iOS 14.4","mp_ver":"0.41.0","mpos_ver":"1.23.0","brand":"iPhone","model":"iPhone 12 mini<iPhone13,1>","screenWidth":375,"screenHeight":812,"windowWidth":375,"windowHeight":729,"openid":"2383816509","guid":2383816509,"session":"9lt6bedggwi2q8qu12xeq0mvrticcjsr","scene":1027,"source":-1,"hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"bookStore_newCI_unit_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"25499931","cid":"1"},"dis":1609729949613,"ext6":27,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"25499931","bookStatus":1,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"1027_25499931"}]}
- {"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.5.0","os_ver":"iOS 14.4","mp_ver":"0.41.0","mpos_ver":"1.23.0","brand":"iPhone","model":"iPhone 12 mini<iPhone13,1>","screenWidth":375,"screenHeight":812,"windowWidth":375,"windowHeight":729,"openid":"1587939573","guid":1587939573,"session":"7xz0o9w1kq06bc1hk5oe41m8wlqignvx","scene":1005,"source":-1,"hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"bookStore_newCI_unit_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"25499931","cid":"1"},"dis":1609730821183,"ext6":23,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"25499931","bookStatus":1,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"1005_25499931"}]}`
- let qqreadtimeurlVal=`https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=3003&refer=-1&bid=182623&readTime=6138&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A6138%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1
+ {"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.5.0","os_ver":"iOS 14.4","mp_ver":"0.41.0","mpos_ver":"1.23.0","brand":"iPhone","model":"iPhone 12 mini<iPhone13,1>","screenWidth":375,"screenHeight":812,"windowWidth":375,"windowHeight":729,"openid":"1587939573","guid":1587939573,"session":"7xz0o9w1kq06bc1hk5oe41m8wlqignvx","scene":1005,"source":-1,"hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"bookStore_newCI_unit_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"25499931","cid":"1"},"dis":1609730821183,"ext6":23,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"25499931","bookStatus":1,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"1005_25499931"}]}`;
+let qqreadtimeurlVal = `https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=3003&refer=-1&bid=182623&readTime=6138&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A6138%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1
  https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=3003&refer=-1&bid=466304&readTime=4759&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A4759%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1
  https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=3001&refer=pages%2Findex%2Findex&bid=25304258&readTime=7487&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A7487%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1
  https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=3001&refer=pages%2Findex%2Findex&bid=855951&readTime=7032&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A7032%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1
@@ -112,8 +111,8 @@ let CASH = 10;
  https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=1007&refer=-1&bid=25628459&readTime=5252&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A5252%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1
  https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=1007&refer=-1&bid=181810&readTime=6298&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A6298%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1
  https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=1027&refer=-1&bid=25499931&readTime=7842&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A7842%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1
- https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=1005&refer=-1&bid=25499931&readTime=7014&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A7014%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1`
- let qqreadtimeheaderVal=`{"ywsession":"bz9uldaahv55q5zdyxs5k4b2u0xp1vnu","Cookie":"ywguid=58359736;ywkey=yw0cDwIQY5bA;platform=ios;channel=mqqmina;mpVersion=0.38.2;qq_ver=8.5.0;os_ver=iOS 14.4;mpos_ver=1.23.0;platform=ios;openid=EE7C09C817F608D1E41A795A6224B316","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1209 Darwin/20.3.0","Referer":"https://appservice.qq.com/1110657249/0.38.2/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.38.2"}
+ https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=1005&refer=-1&bid=25499931&readTime=7014&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A7014%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1`;
+let qqreadtimeheaderVal = `{"ywsession":"bz9uldaahv55q5zdyxs5k4b2u0xp1vnu","Cookie":"ywguid=58359736;ywkey=yw0cDwIQY5bA;platform=ios;channel=mqqmina;mpVersion=0.38.2;qq_ver=8.5.0;os_ver=iOS 14.4;mpos_ver=1.23.0;platform=ios;openid=EE7C09C817F608D1E41A795A6224B316","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1209 Darwin/20.3.0","Referer":"https://appservice.qq.com/1110657249/0.38.2/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.38.2"}
  {"ywsession":"5ev9azrvqwnd00m6hyrp6kom1ejokubp","Cookie":"ywguid=553095493;ywkey=yw6iQR48uk01;platform=ios;channel=mqqmina;mpVersion=0.40.0;qq_ver=8.5.0;os_ver=iOS 14.4;mpos_ver=1.23.0;platform=ios;openid=DEB4C750895E2C9497B165AF176940C5","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1209 Darwin/20.3.0","Referer":"https://appservice.qq.com/1110657249/0.40.0/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.40.0"}
  {"ywsession":"d5wcpbue28du2fs2ziq1azo600vbh3c4","Cookie":"ywguid=775735184;ywkey=ywRzBUSLUrv9;platform=ios;channel=mqqmina;mpVersion=0.35.1;qq_ver=8.4.17;os_ver=iOS 14.4;mpos_ver=1.21.0;platform=ios;openid=EE94B633B91FCC4024268B09FFEFBB79","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.4.17.638 CFNetwork/1209 Darwin/20.3.0","Referer":"https://appservice.qq.com/1110657249/0.35.1/page-frame.html","Accept-Language":"en-us","Accept-Encoding":"gzip, deflate, br","mpversion":"0.35.1"}
  {"ywsession":"tncye4cgep44qeqh89tl5p6lpfeqeebu","Cookie":"ywguid=630582626;ywkey=ywQGvihehMZV;platform=ios;channel=mqqmina;mpVersion=0.35.1;qq_ver=8.4.17;os_ver=iOS 14.4;mpos_ver=1.21.0;platform=ios;openid=66CDD67300DF08173F47EBED5DB829A1","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.4.17.638 CFNetwork/1209 Darwin/20.3.0","Referer":"https://appservice.qq.com/1110657249/0.35.1/page-frame.html","Accept-Language":"en-us","Accept-Encoding":"gzip, deflate, br","mpversion":"0.35.1"}
@@ -127,15 +126,168 @@ let CASH = 10;
  {"ywsession":"6rspvifi2jn1idyukolz6yg6y4irlmyh","Cookie":"ywguid=257769795;ywkey=ywJ3l623EDMC;platform=ios;channel=mqqmina;mpVersion=0.37.0;qq_ver=8.5.0;os_ver=iOS 14.2;mpos_ver=1.23.0;platform=ios;openid=BA99F2A77895F2B9383CFCA999C224CA","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1206 Darwin/20.1.0","Referer":"https://appservice.qq.com/1110657249/0.37.0/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.37.0"}
  {"ywsession":"7omqk19m1gvqolnoibmirs0ooskiv64a","Cookie":"ywguid=577268057;ywkey=ywbNyiEqkKq9;platform=ios;channel=mqqmina;mpVersion=0.38.1;qq_ver=8.5.0;os_ver=iOS 14.2;mpos_ver=1.23.0;platform=ios;openid=577268057","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1206 Darwin/20.1.0","Referer":"https://appservice.qq.com/1110657249/0.38.1/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.38.1"}
  {"ywsession":"9lt6bedggwi2q8qu12xeq0mvrticcjsr","Cookie":"ywguid=2383816509;ywkey=ywrWohbp4KR8;platform=ios;channel=mqqmina;mpVersion=0.41.0;qq_ver=8.5.0;os_ver=iOS 14.4;mpos_ver=1.23.0;platform=ios;openid=2383816509","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1209 Darwin/20.3.0","Referer":"https://appservice.qq.com/1110657249/0.41.0/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.41.0"}
- {"ywsession":"7xz0o9w1kq06bc1hk5oe41m8wlqignvx","Cookie":"ywguid=1587939573;ywkey=ywrzQIH1R2Jh;platform=ios;channel=mqqmina;mpVersion=0.41.0;qq_ver=8.5.0;os_ver=iOS 14.4;mpos_ver=1.23.0;platform=ios;openid=1587939573","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1209 Darwin/20.3.0","Referer":"https://appservice.qq.com/1110657249/0.41.0/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.41.0"}`
+ {"ywsession":"7xz0o9w1kq06bc1hk5oe41m8wlqignvx","Cookie":"ywguid=1587939573;ywkey=ywrzQIH1R2Jh;platform=ios;channel=mqqmina;mpVersion=0.41.0;qq_ver=8.5.0;os_ver=iOS 14.4;mpos_ver=1.23.0;platform=ios;openid=1587939573","Connection":"keep-alive","Content-Type":"application/json","Accept":"*/*","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/1209 Darwin/20.3.0","Referer":"https://appservice.qq.com/1110657249/0.41.0/page-frame.html","Accept-Language":"zh-cn","Accept-Encoding":"gzip, deflate, br","mpversion":"0.41.0"}`;
+const qqreadbdArr = [];
+const qqreadtimeurlArr = [];
+const qqreadtimehdArr = [];
+let qqreadBD = [];
+let qqreadtimeURL = [];
+let qqreadtimeHD = [];
+
+const nowTimes = new Date(
+  new Date().getTime() +
+  new Date().getTimezoneOffset() * 60 * 1000 +
+  8 * 60 * 60 * 1000
+);
+
+if ($.isNode() &&
+  process.env.QQREAD_BODY) {
+  // 没有设置 QQREAD_CASH 则默认为 0 不提现
+  CASH = process.env.QQREAD_CASH || 0;
+
+  // 自定义多 cookie 之间连接的分隔符，默认为 \n 换行分割，不熟悉的不要改动和配置，为了兼容本地 node 执行
+  COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
+
+  console.log(
+    `============ cookies分隔符为：${JSON.stringify(
+      COOKIES_SPLIT
+    )} =============\n`
+  );
+  if (
+    process.env.QQREAD_BODY &&
+    process.env.QQREAD_BODY.indexOf(COOKIES_SPLIT) > -1
+  ) {
+    qqreadBD = process.env.QQREAD_BODY.split(COOKIES_SPLIT);
+  } else {
+    qqreadBD = process.env.QQREAD_BODY.split();
+  }
+
+  if (
+    process.env.QQREAD_TIMEURL &&
+    process.env.QQREAD_TIMEURL.indexOf(COOKIES_SPLIT) > -1
+  ) {
+    qqreadtimeURL = process.env.QQREAD_TIMEURL.split(COOKIES_SPLIT);
+  } else {
+    qqreadtimeURL = process.env.QQREAD_TIMEURL.split();
+  }
+
+  if (
+    process.env.QQREAD_TIMEHD &&
+    process.env.QQREAD_TIMEHD.indexOf(COOKIES_SPLIT) > -1
+  ) {
+    qqreadtimeHD = process.env.QQREAD_TIMEHD.split(COOKIES_SPLIT);
+  } else {
+    qqreadtimeHD = process.env.QQREAD_TIMEHD.split();
+  }
+}
+
+if (COOKIE.qqreadbodyVal) {
+  QQ_READ_COOKIES = {
+    "qqreadbodyVal": COOKIE.qqreadbodyVal.split('\n'),
+    "qqreadtimeurlVal": COOKIE.qqreadtimeurlVal.split('\n'),
+    "qqreadtimeheaderVal": COOKIE.qqreadtimeheaderVal.split('\n')
+  }
+
+  Length = QQ_READ_COOKIES.qqreadbodyVal.length;
+}
 
 
- let QQ_READ_COOKIES = {  
-   "qqreadbodyVal": qqreadbodyVal.split('\n'),
-   "qqreadtimeurlVal": qqreadtimeurlVal.split('\n'),
- "qqreadtimeheaderVal":qqreadtimeheaderVal.split('\n') 
- }
+if (!COOKIE.qqreadbodyVal) {
 
+  if ($.isNode()) {
+    Object.keys(qqreadBD).forEach((item) => {
+      if (qqreadBD[item]) {
+        qqreadbdArr.push(qqreadBD[item]);
+      }
+    });
+    Object.keys(qqreadtimeURL).forEach((item) => {
+      if (qqreadtimeURL[item]) {
+        qqreadtimeurlArr.push(qqreadtimeURL[item]);
+      }
+    });
+    Object.keys(qqreadtimeHD).forEach((item) => {
+      if (qqreadtimeHD[item]) {
+        qqreadtimehdArr.push(qqreadtimeHD[item]);
+      }
+    });
+  } else {
+    qqreadbdArr.push($.getdata("qqreadbd"));
+    qqreadtimeurlArr.push($.getdata("qqreadtimeurl"));
+    qqreadtimehdArr.push($.getdata("qqreadtimehd"));
+    // 根据boxjs中设置的额外账号数，添加存在的账号数据进行任务处理
+    if ("qeCASH") {
+      CASH = $.getval("qeCASH");
+    }
+    const qeCount = ($.getval("qeCount") || "1") - 0;
+    for (let i = 2; i <= qeCount; i++) {
+      if ($.getdata(`qqreadbd${i}`)) {
+        qqreadbdArr.push($.getdata(`qqreadbd${i}`));
+        qqreadtimeurlArr.push($.getdata(`qqreadtimeurl${i}`));
+        qqreadtimehdArr.push($.getdata(`qqreadtimehd${i}`));
+      }
+    }
+  }
+  Length = qqreadbdArr.length
+}
+
+if ($.isNode()) {
+  daytime =
+    new Date(new Date().toLocaleDateString()).getTime() - 8 * 60 * 60 * 1000;
+} else {
+  daytime = new Date(new Date().toLocaleDateString()).getTime();
+}
+
+if ((isGetCookie = typeof $request !== "undefined")) {
+  GetCookie();
+  $.done();
+}
+
+function GetCookie() {
+  if ($request && $request.url.indexOf("addReadTimeWithBid?") >= 0) {
+    const qqreadtimeurlVal = $request.url;
+    if (qqreadtimeurlVal) $.setdata(qqreadtimeurlVal, `qqreadtimeurl${$.idx}`);
+    $.log(
+      `[${jsname + $.idx
+      }] 获取时长url: 成功,qqreadtimeurlVal: ${qqreadtimeurlVal}`
+    );
+    $.msg(jsname + $.idx, `获取时长url: 成功🎉`, ``);
+    const qqreadtimeheaderVal = JSON.stringify($request.headers);
+    if (qqreadtimeheaderVal)
+      $.setdata(qqreadtimeheaderVal, `qqreadtimehd${$.idx}`);
+    $.log(
+      `[${jsname + $.idx
+      }] 获取时长header: 成功,qqreadtimeheaderVal: ${qqreadtimeheaderVal}`
+    );
+    $.msg(jsname + $.idx, `获取时长header: 成功🎉`, ``);
+  } else if (
+    $request &&
+    $request.body.indexOf("bookDetail_bottomBar_read_C") >= 0 &&
+    $request.body.indexOf("bookRead_show_I") >= 0 &&
+    $request.body.indexOf("topBar_left_back_C") < 0 &&
+    $request.body.indexOf("bookRead_dropOut_shelfYes_C") < 0
+  ) {
+    const qqreadbodyVal = $request.body;
+    if (qqreadbodyVal) $.setdata(qqreadbodyVal, `qqreadbd${$.idx}`);
+    $.log(
+      `[${jsname + $.idx}] 获取更新body: 成功,qqreadbodyVal: ${qqreadbodyVal}`
+    );
+    $.msg(jsname + $.idx, `获取更新body: 成功🎉`, ``);
+  }
+}
+
+console.log(
+  `================== 脚本执行 - 北京时间(UTC+8)：${new Date(
+    new Date().getTime() +
+    new Date().getTimezoneOffset() * 60 * 1000 +
+    8 * 60 * 60 * 1000
+  ).toLocaleString()} =====================\n`
+);
+
+console.log(
+  `============ 共 ${Length} 个${jsname}账号=============\n`
+);
+
+console.log(`============ 提现标准为：${CASH} =============\n`);
 
 
 !(async () => {

@@ -1,0 +1,13 @@
+#!name=JS合集
+#!desc=vip破解JS合集
+
+[Script]
+微信快捷跳转 = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
+彩云天气_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/caiyun/caiyun_svip.js
+黄油相机VIP = type=http-response,pattern=^https://api4\.bybutter\.com(/v4/users/me|/v4/shop/.+),script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/bybutter.js
+VSCO unlock vip = type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+网易蜗牛读书VIP = type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
+
+
+[MITM]
+hostname = p.du.163.com,vsco.co,api4.bybutter.com,eixin110.qq.com

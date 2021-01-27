@@ -5,7 +5,7 @@ host, api.smoot.apple.cn
 host, music.apple.com
 host, mvod.itunes.apple.com
 # > App Store
-user-agent, com.apple.appstored*
+user-agent, com.apple.appstored
 host-suffix, mzstatic.com
 host, iosapps.itunes.apple.com
 host, osxapps.itunes.apple.com

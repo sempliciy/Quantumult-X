@@ -8,5 +8,5 @@
 中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/article\/red_packet,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
 中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
 中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\.json,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
-中青自动阅读 = type=cron,cronexp=*/14 0-20 * * *,script-path=https://cdn.jsdelivr.net/gh/songyangzz/QuantumultX@master/YOUTH_READ.js,script-update-interval=0
-中青自动阅读抓包 = type=http-request,pattern=^https:\/\/ios\.baertt\.com\/v5\/article\/complete,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/songyangzz/QuantumultX@master/zqgetbody.js,script-update-interval=0
+cron "*/15 * * * *" script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/YOUTH_READ.js, tag=中青自动阅读
+http-request https://ios.baertt.com/v5/article/complete.json script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/zqgetbody.js, requires-body=true, timeout=10, tag=自动阅读获取body

@@ -1,5 +1,5 @@
 #!name=自用JS合集
-#!desc=vip破解JS合集
+#!desc=vip破解JS、比价JS、评分JS
 
 [Script]
 微信快捷跳转 = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
@@ -8,6 +8,12 @@
 VSCO滤镜VIP = requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/QuantumultX/File/vsco.js,type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/
 网易蜗牛读书VIP = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js,type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json
 NOMO相机 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/nomo.js,script-update-interval=0,type=http-response,pattern=^https:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_product_list
+淘宝比价1 = type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,script-update-interval=0
+淘宝比价2 = type=http-request,pattern=^http://.+/amdc/mobileDispatch,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,script-update-interval=0
+京东比价 = type=http-response,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,script-update-interval=86400
+Netflix Ratings = type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
+Netflix Ratings = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
+Netflix Ratings Season = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js
 
 [MITM]
-hostname = p.du.163.com,vsco.co,api4.bybutter.com,eixin110.qq.com,biz.caiyunapp.com,nomo.dafork.com
+hostname = p.du.163.com,vsco.co,api4.bybutter.com,eixin110.qq.com,biz.caiyunapp.com,nomo.dafork.com,api.m.jd.com,trade-acs.m.taobao.com,ios.prod.ftl.netflix.com

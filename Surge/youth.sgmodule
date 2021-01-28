@@ -2,12 +2,13 @@
 #!desc=Tasks&Cookies
 
 [Script]
-中青看点 = type=cron,cronexp=*/3 0-9 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
-中青看点 = type=http-request,pattern=https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign),script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
-中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/article\/complete,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
-中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/article\/red_packet,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
-中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
-中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\.json,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
+
+中青阅读 = type=cron,cronexp=*/15 * * * *,timeout=10800,script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/YOUTH_READ.js,script-update-interval=0
+中青宝箱 = type=cron,cronexp=30 13/11 * * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
+中青看点 = type=http-request,pattern=https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign),script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
+中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/article\/red_packet,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,requires-body=true
+中青看点获取阅读时长 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
+中青获取body = type=http-request,pattern=https://ios.baertt.com/v5/article/complete.json,requires-body=1,max-size=0,timeout=10,script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/zqgetbody.js,script-update-interval=0
 cron "*/15 * * * *" script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/YOUTH_READ.js, tag=中青自动阅读
 http-request https://ios.baertt.com/v5/article/complete.json script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/zqgetbody.js, requires-body=true, timeout=10, tag=自动阅读获取body
 

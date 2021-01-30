@@ -1,7 +1,8 @@
 #!name=自用Script合集
-#!desc=vip破解、比价、NF评分
+#!desc=BoxJs、vip破解、比价、NF评分、embyPremiere
 
 [Script]
+BoxJs = type=http-request,pattern=^https?://boxjs.net,script-path=https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js, requires-body=true, timeout=120
 微信快捷跳转 = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
 彩云天气_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/caiyun_svip.js
 黄油相机VIP = type=http-response,pattern=^https://api4\.bybutter\.com(/v4/users/me|/v4/shop/.+),script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/bybutter.js
@@ -13,6 +14,7 @@ VSCO滤镜VIP = requires-body=1,script-path=https://raw.githubusercontent.com/nz
 Netflix Ratings = type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 Netflix Ratings = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 Netflix Ratings Season = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js
+embyPremiere = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/embyPremiere.js
 
 [MITM]
-hostname = p.du.163.com,vsco.co,api4.bybutter.com,eixin110.qq.com,biz.caiyunapp.com,nomo.dafork.com,api.m.jd.com,trade-acs.m.taobao.com,ios.prod.ftl.netflix.com
+hostname = %APPEND% mb3admin.com,p.du.163.com,vsco.co,api4.bybutter.com,eixin110.qq.com,biz.caiyunapp.com,nomo.dafork.com,api.m.jd.com,trade-acs.m.taobao.com,ios.prod.ftl.netflix.com

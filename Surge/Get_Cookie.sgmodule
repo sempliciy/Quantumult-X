@@ -24,4 +24,4 @@
 羊毛赚获取body = type=http-request,pattern=^http://ymz.iphonezhuan.com/addaction,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/age174/-/main/ymz.js,script-update-interval=0
 
 [MITM]
-hostname = veishop.iboxpay.com,api.m.jd.com,api5-normal-c-*.amemv.com,m.ximalaya.com,mqqapi.reader.qq.com,nebula.kuaishou.com,*.youth.cn,ios.baertt.com,bububao.duoshoutuan.com,dkd-api.dysdk.com,api3-normal-c-*.huoshan.com,ymz.iphonezhuan.com
+hostname = veishop.iboxpay.com,api.m.jd.com,api5-normal-c-*.amemv.com,m.ximalaya.com,mqqapi.reader.qq.com,nebula.kuaishou.com,*.youth.cn,ios.baertt.com,bububao.duoshoutuan.com,dkd-api.dysdk.com,ymz.iphonezhuan.com

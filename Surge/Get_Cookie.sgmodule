@@ -24,4 +24,4 @@
 芝嫲视频获取body = type=http-request,pattern=https:\/\/api\.sxsjyzm\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/zhima.js,script-update-interval=0
 
 [MITM]
-hostname = veishop.iboxpay.com,api.m.jd.com,api5-normal-c-*.amemv.com,m.ximalaya.com,mqqapi.reader.qq.com,nebula.kuaishou.com,%APPEND% kd.youth.cn, ios.baertt.com,bububao.duoshoutuan.com,dkd-api.dysdk.com,ymz.iphonezhuan.com,api.sxsjyzm.com
+hostname = veishop.iboxpay.com,api.m.jd.com,api5-normal-c-*.amemv.com,m.ximalaya.com,mqqapi.reader.qq.com,nebula.kuaishou.com,kd.youth.cn, ios.baertt.com,bububao.duoshoutuan.com,dkd-api.dysdk.com,ymz.iphonezhuan.com,api.sxsjyzm.com

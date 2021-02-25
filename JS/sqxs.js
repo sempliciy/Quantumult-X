@@ -23,7 +23,7 @@
 
 
 【QX教程】：
-hostname：ocean.shuqireader.com
+hostname：ocean.shuqireader.com,api-access.pangolin-sdk-toutiao-b.com,api-access.pangolin-sdk-toutiao.com
 
 [rewrite_local]
 https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery url script-request-body sqxsgetck.js
@@ -31,6 +31,9 @@ https://ocean.shuqireader.com/api/activity/activity/v1/lottery/draw url script-r
 https://ocean.shuqireader.com/api/activity/xapi/gold/record url script-request-body sqxsgetck.js
 https://ocean.shuqireader.com/api/prizecenter/xapi/prize/manual/receive url script-request-body sqxsgetck.js
 https://ocean.shuqireader.com/api/ad/v1/api/prize/readpage/pendant/lottery url script-request-body sqxsgetck.js
+https://api-access.pangolin-sdk-toutiao-b.com/api/ad/union/sdk/reward_video/reward/ url script-request-body sqxsgetck.js
+https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/ url script-request-body sqxsgetck.js
+
 
 [task_local]
 0 12 * * * sqxs.js, tag=书旗小说, enabled=true
@@ -132,12 +135,14 @@ async function all()
 	{
 		
 		let CountNumber =$.getval('CountNumber');
+		if(typeof CountNumber === 'undefined')
+			CountNumber=1;
 		$.log(`============ 共 ${CountNumber} 个${jobname}账号=============`);
 	
 		for (let i = 1; i <= CountNumber; i++) 
 		{
-			if ($.getdata(`readck${i}`)) 
-			{	
+			//if ($.getdata(`readck${i}`)) 
+			//{	
 				readckArr = $.getdata(`readck${i}`).split('&&');
 				receivecoinckArr = $.getdata(`receivecoinck${i}`).split('&&');
 				vediogoldprizeckArr= $.getdata(`vediogoldprizeck${i}`).split('&&');
@@ -148,22 +153,28 @@ async function all()
 				ReadTimes=0;
 				vediogold=0;
 				drawgold=0;
-				//阅读
-				await readbook();	
+				
+				if( $.getdata(`readck${i}`) !== '')
+					//阅读
+					await readbook();	
 				
 				//收集阅读金币
 				//if(ReadTimes>0)
+				if( $.getdata(`receivecoinck${i}`) !== '')
 				await receivecoin();
 				
 				//看视频奖励金币
+				if( $.getdata(`vediogoldprizeck${i}`) !== '')
 				await vediogoldprize(0);
 				
 				//看视频奖励抽奖次数
+				if( $.getdata(`vediodrawprizeck${i}`) !== ''&&$.getdata(`drawck${i}`) !== '')
 				await vediodrawprize(0);
 				
 				//个人信息
+				if( $.getdata(`userinfock${i}`) !== '')
 				await userinfo();
-			}
+			//}
 		}
 		
 	}
@@ -271,8 +282,43 @@ function vediogoldprize(j) {
     });
   });
 } 	
-	
 function vediodrawprize(k) {
+  return new Promise((resolve, reject) => {
+  const url = "https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/";
+
+$.log(vediodrawprizeckArr[1]);
+  const request = {
+      url: url,
+      headers: JSON.parse(vediodrawprizeckArr[1]),
+      body: vediodrawprizeckArr[0]
+  };
+
+	$.post(request, async(error, request, data) =>{
+      try {
+		const result=JSON.parse(data)
+
+		if(result.cypher==2)
+		{
+			k++;
+			$.log("【视频抽奖】观看第"+k+"个视频成功，获得一次抽奖机会");
+			await $.wait(5000);
+			await draw(k);
+		}
+		 else
+		 {	 
+			 $.log("【视频抽奖】观看失败达到上限");
+			 //$.log(data);
+		 }
+      } catch(e) {
+			$.log(e)
+      }	
+      resolve();  
+    });
+  });
+} 
+
+
+function vediodrawprize2(k) {
   return new Promise((resolve, reject) => {
   const url = "https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery";
 

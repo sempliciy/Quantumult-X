@@ -1,5 +1,5 @@
 #!name=自用Get_Cookie合集
-#!desc=京东、笑谱、抖音极速版、喜马拉雅极速版、企鹅读书、快手极速版、中青看点极速版、多看点、步步高、羊毛赚、芝嫲视频
+#!desc=京东、笑谱、抖音极速版、喜马拉雅极速版、企鹅读书、快手极速版、中青看点极速版、多看点、步步高、羊毛赚、芝嫲视频、书旗小说
 
 [Script]
 获取京东Cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
@@ -17,9 +17,16 @@
 中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\d?\.json,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
 多看点ziye获取body = type=http-request,pattern=http:\/\/dkd-api\.dysdk\.com\/*,requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/duokandian.js,script-update-interval=0
 步步宝获取cookie = type=http-request,pattern=https://bububao.duoshoutuan.com/user/profile,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/adwktt/adwktt/master/BBB.js,script-update-interval=0
-步步宝ziye获取TOKEN = type=http-request,pattern=https:\/\/bububao\.duoshoutuan\.com\/user\/*,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.js, requires-body=true
+步步宝ziye获取TOKEN = type=http-request,pattern=https:\/\/bububao\.duoshoutuan\.com\/user\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.js,script-update-interval=0
 羊毛赚获取body = type=http-request,pattern=^http://ymz.iphonezhuan.com/addaction,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/age174/-/main/ymz.js,script-update-interval=0
 芝嫲视频获取body = type=http-request,pattern=https:\/\/api\.sxsjyzm\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.js,script-update-interval=0
+书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
+书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/activity/v1/lottery/draw,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
+书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/xapi/gold/record,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
+书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/prizecenter/xapi/prize/manual/receive,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
+书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/ad/v1/api/prize/readpage/pendant/lottery,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
+书旗小说Cookie = type=http-request,pattern=https://api-access.pangolin-sdk-toutiao-b.com/api/ad/union/sdk/reward_video/reward/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
+书旗小说Cookie = type=http-request,pattern=https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
 
 [MITM]
-hostname = veishop.iboxpay.com,api.m.jd.com,api5-normal-c-*.amemv.com,m.ximalaya.com,mqqapi.reader.qq.com,nebula.kuaishou.com,kd.youth.cn, ios.baertt.com,bububao.duoshoutuan.com,dkd-api.dysdk.com,ymz.iphonezhuan.com,api.sxsjyzm.com
+hostname = veishop.iboxpay.com,api.m.jd.com,api5-normal-c-*.amemv.com,m.ximalaya.com,mqqapi.reader.qq.com,nebula.kuaishou.com,kd.youth.cn, ios.baertt.com,bububao.duoshoutuan.com,dkd-api.dysdk.com,ymz.iphonezhuan.com,api.sxsjyzm.com,ocean.shuqireader.com,api-access.pangolin-sdk-toutiao-b.com,api-access.pangolin-sdk-toutiao.com

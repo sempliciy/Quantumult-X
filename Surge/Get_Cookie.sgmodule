@@ -1,5 +1,5 @@
 #!name=自用Get_Cookie合集
-#!desc=京东、笑谱、抖音极速版、喜马拉雅极速版、企鹅读书、快手极速版、中青看点极速版、多看点、步步高、羊毛赚、芝嫲视频、书旗小说、返利网
+#!desc=京东、笑谱、抖音极速版、喜马拉雅极速版、企鹅读书、快手极速版、中青看点极速版、多看点、步步高、羊毛赚、芝嫲视频、书旗小说、返利网、中国联通
 
 [Script]
 获取京东Cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
@@ -30,5 +30,9 @@
 返利网获取header = type=http-request,pattern=https:\/\/(huodong\.fanli\.com\/*||passport\.fanli\.com\/*||gw\.fanli\.com\/*),script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.js
 返利网获取body = type=http-request,pattern=https:\/\/(huodong\.fanli\.com\/*||passport\.fanli\.com\/*||gw\.fanli\.com\/*),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.js
 
+中国联通 = type=http-request,pattern= ^https?:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+中国联通 = type=http-request,pattern= ^https?:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+中国联通 = type=http-request,pattern= ^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+
 [MITM]
-hostname = veishop.iboxpay.com,api.m.jd.com,api5-normal-c-*.amemv.com,m.ximalaya.com,mqqapi.reader.qq.com,nebula.kuaishou.com,kd.youth.cn, ios.baertt.com,bububao.duoshoutuan.com,dkd-api.dysdk.com,ymz.iphonezhuan.com,api.sxsjyzm.com,ocean.shuqireader.com,api-access.pangolin-sdk-toutiao-b.com,api-access.pangolin-sdk-toutiao.com,huodong.fanli.com,passport.fanli.com,gw.fanli.com
+hostname = veishop.iboxpay.com,api.m.jd.com,api5-normal-c-*.amemv.com,m.ximalaya.com,mqqapi.reader.qq.com,nebula.kuaishou.com,kd.youth.cn, ios.baertt.com,bububao.duoshoutuan.com,dkd-api.dysdk.com,ymz.iphonezhuan.com,api.sxsjyzm.com,ocean.shuqireader.com,api-access.pangolin-sdk-toutiao-b.com,api-access.pangolin-sdk-toutiao.com,huodong.fanli.com,passport.fanli.com,gw.fanli.com, act.10010.com, m.client.10010.com

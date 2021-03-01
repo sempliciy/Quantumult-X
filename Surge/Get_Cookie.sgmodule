@@ -3,7 +3,7 @@
 
 [Script]
 获取京东Cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-笑谱获取更新TOKEN = type=http-response,pattern=https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf-user-auth-web\/ignore_tk\/veishop\/v1\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/iboxpay.js
+笑谱获取更新TOKEN = type=http-response,pattern=https:\/\/veishop\.iboxpay\.com\/nf_gateway\/nf-user-auth-web\/ignore_tk\/veishop\/v1\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/iboxpay.js
 抖音极速版获取cookie = type=http-request,pattern=^https://(aweme-\w+|aweme).snssdk.com/luckycat/aweme/v1/task/sign_in/detail?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/dyjsb.js,script-update-interval=0
 抖音极速版获取body = type=http-request,pattern=^https://(aweme-\w+|aweme).snssdk.com/luckycat/aweme/v1/task/done/read?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/dyjsb.js,script-update-interval=0
 抖音极速版获取step = type=http-request,pattern=^https://(aweme-\w+|aweme).snssdk.com/luckycat/aweme/v1/task/walk/step_submit?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/dyjsb.js,script-update-interval=0
@@ -15,11 +15,11 @@
 中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/article\/info\/get\.json,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
 中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/user\/stay\.json,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
 中青看点 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\d?\.json,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
-多看点ziye获取body = type=http-request,pattern=http:\/\/dkd-api\.dysdk\.com\/*,requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/duokandian.js,script-update-interval=0
+多看点ziye获取body = type=http-request,pattern=http:\/\/dkd-api\.dysdk\.com\/*,requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/duokandian.js,script-update-interval=0
 步步宝获取cookie = type=http-request,pattern=https://bububao.duoshoutuan.com/user/profile,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/adwktt/adwktt/master/BBB.js,script-update-interval=0
-步步宝ziye获取TOKEN = type=http-request,pattern=https:\/\/bububao\.duoshoutuan\.com\/user\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/bububao.js,script-update-interval=0
+步步宝ziye获取TOKEN = type=http-request,pattern=https:\/\/bububao\.duoshoutuan\.com\/user\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/bububao.js,script-update-interval=0
 羊毛赚 = type=http-request,pattern=^http://ymz.iphonezhuan.com/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/age174/-/main/ymz.js,script-update-interval=0
-芝嫲视频获取body = type=http-request,pattern=https:\/\/api\.sxsjyzm\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.js,script-update-interval=0
+芝嫲视频获取body = type=http-request,pattern=https:\/\/api\.sxsjyzm\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/zhima.js,script-update-interval=0
 书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery,requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
 书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/activity/v1/lottery/draw,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
 书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/xapi/gold/record,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
@@ -27,8 +27,8 @@
 书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/ad/v1/api/prize/readpage/pendant/lottery,requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
 书旗小说Cookie = type=http-request,pattern=https://api-access.pangolin-sdk-toutiao-b.com/api/ad/union/sdk/reward_video/reward/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
 书旗小说Cookie = type=http-request,pattern=https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
-返利网获取header = type=http-request,pattern=https:\/\/(huodong\.fanli\.com\/*||passport\.fanli\.com\/*||gw\.fanli\.com\/*),script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.js
-返利网获取body = type=http-request,pattern=https:\/\/(huodong\.fanli\.com\/*||passport\.fanli\.com\/*||gw\.fanli\.com\/*),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/flw.js
+返利网获取header = type=http-request,pattern=https:\/\/(huodong\.fanli\.com\/*||passport\.fanli\.com\/*||gw\.fanli\.com\/*),script-path=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/flw.js
+返利网获取body = type=http-request,pattern=https:\/\/(huodong\.fanli\.com\/*||passport\.fanli\.com\/*||gw\.fanli\.com\/*),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/flw.js
 中国联通 = type=http-request,pattern= ^https?:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm,script-path=https://raw.githubusercontent.com/yxgsir/chavyleung/master/10010/10010.cookie.js
 中国联通 = type=http-request,pattern= ^https?:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign,script-path=https://raw.githubusercontent.com/yxgsir/chavyleung/master/10010/10010.cookie.js
 

@@ -29,8 +29,6 @@ if(url.indexOf('/prizecenter/xapi/prize/manual/receive')!=-1)
 		$.setdata(receivecoinck ,'receivecoinck'+ $.idx)	
 	}		
 }
-
-console.log(url);
 if(url.indexOf('/ad/v1/api/prize/lottery')!=-1)
 {
 	var body = $request.body;
@@ -41,22 +39,13 @@ if(url.indexOf('/ad/v1/api/prize/lottery')!=-1)
 		let vediogoldprizeck=body+'&&'+JSON.stringify(headers);
 		$.setdata(vediogoldprizeck ,'vediogoldprizeck'+ $.idx)	
 	}		
-}
-
-if(url.indexOf('/ad/union/sdk/reward_video/reward/')!=-1)
-{
-	var body = $request.body;
-	var headers = $request.headers;
-	if(body&&headers)
+	if(body.indexOf('deliveryId=711')!=-1&&headers)
 	{
 		$.msg('书旗小说'+ $.idx,'获取视频抽奖奖励ck成功(共6个ck)');
 		let vediodrawprizeck=body+'&&'+JSON.stringify(headers);
-		$.setdata(vediodrawprizeck ,'vediodrawprizeck'+ $.idx)
-	}		
-	
+		$.setdata(vediodrawprizeck ,'vediodrawprizeck'+ $.idx)	
+	}	
 }
-
-
 
 if(url.indexOf('activity/activity/v1/lottery/draw')!=-1)
 {
@@ -69,7 +58,6 @@ if(url.indexOf('activity/activity/v1/lottery/draw')!=-1)
 		$.setdata(drawck ,'drawck'+ $.idx)	
 	}		
 }
-
 if(url.indexOf('activity/xapi/gold/record')!=-1)
 {
 	var url = $request.url;

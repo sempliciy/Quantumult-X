@@ -25,8 +25,6 @@
 书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/xapi/gold/record,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
 书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/prizecenter/xapi/prize/manual/receive,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
 书旗小说Cookie = type=http-request,pattern=https://ocean.shuqireader.com/api/ad/v1/api/prize/readpage/pendant/lottery,requires-body=1,max-size=1048576,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
-书旗小说Cookie = type=http-request,pattern=https://api-access.pangolin-sdk-toutiao-b.com/api/ad/union/sdk/reward_video/reward/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
-书旗小说Cookie = type=http-request,pattern=https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/sqxsgetck.js,script-update-interval=0
 返利网获取header = type=http-request,pattern=https:\/\/(huodong\.fanli\.com\/*||passport\.fanli\.com\/*||gw\.fanli\.com\/*),script-path=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/flw.js
 返利网获取body = type=http-request,pattern=https:\/\/(huodong\.fanli\.com\/*||passport\.fanli\.com\/*||gw\.fanli\.com\/*),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/flw.js
 中国联通 = type=http-request,pattern= ^https?:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm,script-path=https://raw.githubusercontent.com/yxgsir/chavyleung/master/10010/10010.cookie.js
@@ -34,4 +32,4 @@
 悦动族获取TOKEN = type=http-response,pattern=https:\/\/yuedongzu\.yichengw\.cn\/*,script-path=https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/yuedongzu.js
 
 [MITM]
-hostname = veishop.iboxpay.com,api.m.jd.com,api5-normal-c-*.amemv.com,m.ximalaya.com,mqqapi.reader.qq.com,nebula.kuaishou.com,kd.youth.cn, ios.baertt.com,bububao.duoshoutuan.com,dkd-api.dysdk.com,ymz.iphonezhuan.com,api.sxsjyzm.com,ocean.shuqireader.com,api-access.pangolin-sdk-toutiao-b.com,api-access.pangolin-sdk-toutiao.com,huodong.fanli.com,passport.fanli.com,gw.fanli.com, act.10010.com, m.client.10010.com,yuedongzu.yichengw.cn
+hostname = veishop.iboxpay.com,api.m.jd.com,api5-normal-c-*.amemv.com,m.ximalaya.com,mqqapi.reader.qq.com,nebula.kuaishou.com,kd.youth.cn, ios.baertt.com,bububao.duoshoutuan.com,dkd-api.dysdk.com,ymz.iphonezhuan.com,api.sxsjyzm.com,ocean.shuqireader.com,huodong.fanli.com,passport.fanli.com,gw.fanli.com, act.10010.com, m.client.10010.com,yuedongzu.yichengw.cn

@@ -15,6 +15,7 @@ Netflix Ratings = type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.c
 Netflix Ratings = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 Netflix Ratings Season = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js
 embyPremiere = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/embyPremiere.js
+Dayone = type=http-response,pattern=^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/dayone.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% mb3admin.com,p.du.163.com,vsco.co,api4.bybutter.com,eixin110.qq.com,biz.caiyunapp.com,nomo.dafork.com,api.m.jd.com,trade-acs.m.taobao.com,ios.prod.ftl.netflix.com
+hostname = %APPEND% mb3admin.com,p.du.163.com,vsco.co,api4.bybutter.com,eixin110.qq.com,biz.caiyunapp.com,nomo.dafork.com,api.m.jd.com,trade-acs.m.taobao.com,ios.prod.ftl.netflix.com, %APPEND% dayone.*

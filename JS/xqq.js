@@ -1,25 +1,4 @@
 /*
-软件名称:生活圈 商店搜索下载
-更新时间：2021-04-08 @肥皂
-脚本说明：生活圈自动阅读
-脚本为自动完成生活圈的评论任务
-
-请不要分享此脚本,请不要分享此脚本,请不要分享此脚本。
-单纯跑脚本每天低保三块钱。手动去转载文章到生活圈,两毛一条，
-请转账自己生活圈定位地区的文章。文章可以去微信搜索定位地区的一些本地新闻号转载。文章可转载或直接复制粘贴当原创发布,只要上了推送十块钱一篇。判定原创1元一贴
-
-本人公众号,有些脚本可能只会发布到公众号,比如自己偷撸的,bug无限刷之类的,不定期更新一些文章吧。下面的链接是公众号二维码
-https://ae01.alicdn.com/kf/Ub229d86c9337410ebe479afe22226c9aV.jpg
-
-复制此文章链接到微信打开阅读并下载生活圈,我会有两分钱的收益,谢谢大家。
-https://tz.fafengtuqiang.cn/weizhan/article/109912864/31896564367/1568637/510227705367/1080334
-或者商店搜索下载,微信秒到,注册后七天可提现,之后每天可提
-
-本脚本以学习为主！
-使用方法:首页找到评论有奖,点进去即获取数据成功
-
-TG电报群: https://t.me/hahaha8028
-
 注意事项:必看。
 脚本默认评论方式为使用文章标题评论,最好去boxjs自定义评论内容里添加自定义的内容,否则太多人评论都是相同的内容,这样容易出问题，部分地区可能没有评论有奖的任务，需要自己切换地区,首次打开软件最好把软件的定位权限关闭
 
@@ -28,25 +7,18 @@ TG电报群: https://t.me/hahaha8028
 
 以上地区请不要批量扎堆到一个地方,自己随机选一个地区。多账号直接退出登录,换号就行,不需要使用卸载大法,去生活圈公众号绑定一下账号就行了,多账号请尽量错开地区玩，最好每天去boxjs修改一下自定义评论的内容,最大限度的防止黑号。
 
-boxjs地址 :  
 
-https://raw.githubusercontent.com/age174/-/main/feizao.box.json
-
-生活圈
 圈X配置如下，其他软件自行测试
 [task_local]
 #生活圈
-0-59 9,12,22 * * * https://raw.githubusercontent.com/age174/-/main/shq.js, tag=生活圈, img-url=https://ftp.bmp.ovh/imgs/2021/04/e2b32e2eb2ad0cd3.png, enabled=true
+0-59 9,12,22 * * * https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/xqq.js, tag=生活圈, img-url=https://ftp.bmp.ovh/imgs/2021/04/e2b32e2eb2ad0cd3.png, enabled=true
 
 [rewrite_local]
 #生活圈
-https://ex.jwshq.cn/app/commentator/getActivityItemPage url script-request-header https://raw.githubusercontent.com/age174/-/main/shq.js
-
-#loon
-https://ex.jwshq.cn/app/commentator/getActivityItemPage script-path=https://raw.githubusercontent.com/age174/-/main/shq.js, requires-header=true, timeout=10, tag=生活圈
+https://ex.jwshq.cn/app/commentator/getActivityItemPage url script-request-header https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/xqq.js
 
 #surge
-生活圈 = type=http-request,pattern=https://ex.jwshq.cn/app/commentator/getActivityItemPage,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/age174/-/main/shq.js,script-update-interval=0
+生活圈 = type=http-request,pattern=https://ex.jwshq.cn/app/commentator/getActivityItemPage,requires-header=1,max-size=0,script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/xqq.js,script-update-interval=0
 
 [MITM]
 hostname = ex.jwshq.cn
@@ -61,8 +33,8 @@ let shqurl = $.getdata('shqurl')
 let shqhd = $.getdata('shqhd')
 let shqkey = '',id = '',uid='',tid=''
 let nr = ($.getval('nr') || '');//自定义评论内容
-let txje = 15 //在此处修改一下需要提现的金额,可对照自己的余额修改提现,支持小数点提现,改完手动运行脚本即可提现,微信秒到,记得绑定自己的微信
-let kg = 0  //提现开关,默认关闭,改为1手动执行一次可提现
+let txje = 10 //在此处修改一下需要提现的金额,可对照自己的余额修改提现,支持小数点提现,改完手动运行脚本即可提现,微信秒到,记得绑定自己的微信
+let kg = 1  //提现开关,默认关闭,改为1手动执行一次可提现
 !(async () => {
   if (typeof $request !== "undefined") {
     await shqck()

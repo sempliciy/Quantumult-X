@@ -16,7 +16,6 @@ embyPremiere = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/servi
 VSCO滤镜VIP = requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/QuantumultX/File/vsco.js,type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/
 网易蜗牛读书VIP = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js,type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json
 Dayone = type=http-response,pattern=^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/dayone.js,script-update-interval=0
-Termius = type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/terminus.js,script-update-interval=0
 
 [MITM]
 hostname = %APPEND% mb3admin.com,p.du.163.com,vsco.co,api4.bybutter.com,eixin110.qq.com,biz.caiyunapp.com,nomo.dafork.com,api.m.jd.com,trade-acs.m.taobao.com,ios.prod.ftl.netflix.com,%APPEND% dayone.*,api.termius.com

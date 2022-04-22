@@ -28,6 +28,7 @@ TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v
 
 # 京东比价
 http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) requires-body=true, script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/jd_price_lite.js, tag=京东比价 Lite(通知版)
+http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) requires-body=1,script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/jdjf_price.js, tag=京粉比价
 
 #Netflix Ratings
 Netflix Ratings = type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js

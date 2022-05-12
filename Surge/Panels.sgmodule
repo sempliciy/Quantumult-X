@@ -8,9 +8,6 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 #网络信息
 NET_info = script-name=NET_info,title=网络信息,content=请刷新,style=info,update-interval=60
 
-#机场信息
-Sub_info = script-name=Sub_info,update-interval=600
-
 # 流媒体解锁检测
 stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=-1
 
@@ -20,9 +17,6 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 
 网络信息
 NET_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/ipcheck.js
-
-#机场信息
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=https%3A%2F%2Fapi.nxtlnodes.com%2FSubscription%2FSurgeNodeList%3Fqx%3D2%26sid%3D14048%26token%3Dcf5CEtPdbyO&reset_day=20&title=AmyTelecom&icon=bonjour&color=#007aff
 
 # 流媒体解锁检测
 stream-all = type=generic, timeout=15, script-path=https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js

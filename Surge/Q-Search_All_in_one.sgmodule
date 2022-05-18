@@ -58,7 +58,7 @@
 
 # 社区
 # db xxx (豆瓣)
-^https:\/\/duckduckgo.com\/\?q=db(\+|%20)([^&]+).+ https://www.douban.com/search?q=$2 302
+^https:\/\/duckduckgo.com\/\?q=db(\+|%20)([^&]+).+ https://m.douban.com/search/?query=$2 302
 
 # zh xxx (知乎)
 ^https:\/\/duckduckgo.com\/\?q=zh(\+|%20)([^&]+).+ https://www.zhihu.com/search?q=$2 302
@@ -74,7 +74,7 @@
 
 # > 购物
 # zdm xxx (什么值得买)
-^https:\/\/duckduckgo.com\/\?q=zdm(\+|%20)([^&]+).+ https://search.m.smzdm.com/?c=post&s=$2&v=b 302
+^https:\/\/duckduckgo.com\/\?q=zdm(\+|%20)([^&]+).+ https://search.m.smzdm.com/?s=$2 302
 
 # tm xxx (天猫)
 ^https:\/\/duckduckgo.com\/\?q=tm(\+|%20)([^&]+).+ https://s.m.tmall.com/m/search.htm?q=$2 302

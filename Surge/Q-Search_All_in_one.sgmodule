@@ -9,30 +9,20 @@
 
 # gh：  GitHub搜索
 # gm：  Google图片搜索
-# sof:  Stack Overflow
-# se:   StackExchange
-# wa:   WolframAlpha
 # wiki: 维基百科
 # wk:   维基中文)
-# mg:   Magi
-# tf:   Google 搜索 TestFlight
 
 # yd：有道词典搜索
 # trc: Google 译至中
 # tre: Google 译至英
-# trj: Google 译至日
 
 # db：豆瓣搜索
 # zh: 知乎
 # wb: 微博
 # wx: 微信
-# rd: Reddit
-# tw: Twitter
 # ssp: 少数派
-# csdn: CSDN
 
 # zdm: 什么值得买
-# amz: 亚马逊
 # jd: 京东
 # tb: 淘宝
 # tm: 天猫
@@ -56,26 +46,11 @@
 # gm xxx (Google图片)
 ^https:\/\/duckduckgo.com\/\?q=gm(\+|%20)([^&]+).+ https://www.google.com/search?&tbm=isch&q=$2 302
 
-# sof xxx (Stack Overflow)
-^https:\/\/duckduckgo.com\/\?q=sof(\+|%20)([^&]+).+ https://stackoverflow.com/search?q=$2 302
-
-# se xxx (StackExchange)
-^https:\/\/duckduckgo.com\/\?q=se(\+|%20)([^&]+).+ https://stackexchange.com/search?q=$2 302
-
-# wa xxx (WolframAlpha)
-^https:\/\/duckduckgo.com\/\?q=wa(\+|%20)([^&]+).+ https://www.wolframalpha.com/input/?i=$2 302
-
 # wiki xxx (Wikipedia)
 ^https:\/\/duckduckgo.com\/\?q=wiki(\+|%20)([^&]+).+ https://wikipedia.org/wiki/$2 302
 
 # wk xxx (Wikipedia 中文)
 ^https:\/\/duckduckgo.com\/\?q=wk(\+|%20)([^&]+).+ https://zh.wikipedia.org/wiki/$2 302
-
-# mg xxx (Magi)
-^https:\/\/duckduckgo.com\/\?q=mg(\+|%20)([^&]+).+ https://magi.com/search?q=$2 302
-
-# tf xxx (Google 搜索 TestFlight)
-^https:\/\/duckduckgo.com\/\?q=tf(\+|%20)([^&]+).+ https://www.google.com/search?as_q=$2&as_sitesearch=testflight.apple.com 302
 
 # > 翻译
 # yd xxx (有道词典)
@@ -86,9 +61,6 @@
 
 # tre xxx (Google 译至英)
 ^https:\/\/duckduckgo.com\/\?q=tre(\+|%20)([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$2 302
-
-# trj xxx (Google 译至日)
-^https:\/\/duckduckgo.com\/\?q=trj(\+|%20)([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$2 302
 
 # 社区
 # db xxx (豆瓣)
@@ -103,24 +75,12 @@
 # wx xxx (微信)
 ^https:\/\/duckduckgo.com\/\?q=wx(\+|%20)([^&]+).+ https://weixin.sogou.com/weixinwap?query=$2 302
 
-# rd xxx (Reddit)
-^https:\/\/duckduckgo.com\/\?q=rd(\+|%20)([^&]+).+ https://www.reddit.com/search?q=$2 302
-
-# tw xxx (Twitter)
-^https:\/\/duckduckgo.com\/\?q=tw(\+|%20)([^&]+).+ https://twitter.com/search?q=$2 302
-
 # ssp xxx (少数派)
 ^https:\/\/duckduckgo.com\/\?q=ssp(\+|%20)([^&]+).+ https://sspai.com/search/post/$2 302
-
-# csdn xxx (CSDN)
-^https:\/\/duckduckgo.com\/\?q=csdn(\+|%20)([^&]+).+ https://so.csdn.net/so/search/s.do?q=$2&t=&u= 302
 
 # > 购物
 # zdm xxx (什么值得买)
 ^https:\/\/duckduckgo.com\/\?q=zdm(\+|%20)([^&]+).+ https://search.m.smzdm.com/?v=b&s=$2 302
-
-# amz xxx (亚马逊)
-^https:\/\/duckduckgo.com\/\?q=amz(\+|%20)([^&]+).+ https://www.amazon.cn/gp/aw/s/?k=$2 302
 
 # jd xxx (京东)
 ^https:\/\/duckduckgo.com\/\?q=jd(\+|%20)([^&]+).+ https://so.m.jd.com/ware/search.action?keyword=$2 302

@@ -1,0 +1,38 @@
+#!name=remove_ads
+#!desc=App removes ads for surge.
+#!system=ios
+
+[Rule]
+# 视频的暂停广告
+DOMAIN-SUFFIX, cupid.iqiyi.com, REJECT
+DOMAIN, iyes.youku.com, REJECT
+#屏蔽知乎网页非得让用户登陆的 sb 玩意儿
+URL-REGEX, ^https://static\.zhihu\.com/[^/]+/(main|column)\.signflow\.[^.]+.js, REJECT
+
+[Script]
+# 开屏去广告
+嘀嗒出行_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/capis(-?\w*)?\.didapinche\.com\/ad\/cx\/startup\?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+Fa米家_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/fmapp\.chinafamilymart\.com\.cn\/api\/app\/market\/start\/ad,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/famijia/famijia_checkin.js
+BiliBili_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+美团外卖_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+小爱音箱_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/hd\.mina\.mi\.com\/splashscreen\/alert,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+京东_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+联享家_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview.fcg,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+多点_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/cmsapi\.dmall\.com\/app\/home\/homepageStartUpPic,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+
+#bilibili
+整体栏的布局修改 = type=http-response,requires-body=1,max-size=0,pattern=^https://app\.bilibili\.com/x/resource/show/tab(/v2)?\?access_key,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/bilibili/bilibili_tab.js
+短视频的推荐 = type=http-response,requires-body=1,max-size=0,pattern=^https://app\.bilibili\.com/x/v2/feed/index(/story)?\?access_key,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/bilibili/bilibili_feed.js
+“我的”的修改 = type=http-response,requires-body=1,max-size=0,pattern=^https://app\.bilibili\.com/x/v2/account/mine\?access_key,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/bilibili/bilibili_mine.js
+开屏广告 = type=http-response,requires-body=1,max-size=0,pattern=^https://app\.bilibili\.com/x/v2/splash/list,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/bilibili/bilibili_splash.js
+
+#weibo
+微博下面的评论 = type=http-response,requires-body=1,max-size=0,pattern=^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/comments/build_comments\?,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/weibo/weibo_comment.js
+微博 全部关注 = type=http-response,requires-body=1,max-size=0,pattern=^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/(statuses/unread_hot_timeline|statuses/friends/timeline|video/tiny_stream_video_list|statuses/unread_friends_timeline)\?,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/weibo/weibo_statuses.js
+超话 帖子/精华/官方 = type=http-response,requires-body=1,max-size=0,pattern=^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/(searchall|page)\?,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/weibo/weibo_cardlist.js
+发现 热点 = type=http-response,requires-body=1,max-size=0,pattern=^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/cardlist\?,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/weibo/weibo_cardlist_discover.js
+创作者广告共享计划 = type=http-response,requires-body=1,max-size=0,pattern=^https://(api\.weibo\.cn|mapi\.weibo\.com)/2/statuses/extend\?,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/weibo/weibo_statuses_extend.js
+开屏广告 = type=http-response,requires-body=1,max-size=0,pattern=^https://sdkapp\.uve\.weibo\.com/interface/sdk/sdkad\.php$,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/weibo/weibo_sdkad.js
+
+[MITM]
+hostname = %APPEND% app.bilibili.com, %APPEND% api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com,%APPEND% capis.didapinche.com,capis*.didapinche.com,fmapp.chinafamilymart.com.cn,app.bilibili.com,wmapi.meituan.com,hd.mina.mi.com,api.m.jd.com,mi.gdt.qq.com,cmsapi.dmall.com,%APPEND% static.zhihu.com

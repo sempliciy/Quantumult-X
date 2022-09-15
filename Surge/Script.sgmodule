@@ -31,9 +31,5 @@ Netflix Ratings Season = type=http-response,pattern=^https?://ios\.prod\.ftl\.ne
 # 美图秀秀+解锁VIP
 mtxx = type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtxx.js
 
-# 羊了个羊
-ylgy = type=http-response,pattern=^https:\/\/cat-match-static\.easygame2021\.com\/catMatch\/sheep_wx_1_1_4\/remote\/resources\/import\/cb\/cb6bb31d-ff5f-4cb9-b0a5-64018e70a0ca.c0636.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ylgy.js
-ylgy = type=http-response,pattern=^https:\/\/cat-match\.easygame2021\.com\/sheep\/v1\/game\/map_info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ylgy.js
-
 [MITM]
-hostname = %APPEND% mb3admin.com,vsco.co,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com,api.xiuxiu.meitu.com,cat-match-static.easygame2021.com,cat-match.easygame2021.com
+hostname = %APPEND% mb3admin.com,vsco.co,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com,api.xiuxiu.meitu.com

@@ -24,8 +24,5 @@ Netflix Ratings = type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.c
 Netflix Ratings = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 Netflix Ratings Season = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js
 
-# 美图秀秀+解锁VIP
-mtxx = type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtxx.js
-
 [MITM]
-hostname = %APPEND% mb3admin.com,vsco.co,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com,api.xiuxiu.meitu.com
+hostname = %APPEND% mb3admin.com,vsco.co,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com

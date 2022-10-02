@@ -27,5 +27,11 @@ Netflix Ratings Season = type=http-response,pattern=^https?://ios\.prod\.ftl\.ne
 # 美图秀秀+解锁VIP
 mtxx = type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtxx.js
 
+#Lightroom+解锁订阅
+Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lightroom.js
+
+#印章生成器+解锁订阅
+yzscq = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/yzscq.js
+
 [MITM]
-hostname = %APPEND% mb3admin.com,vsco.co,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com,api.xiuxiu.meitu.com
+hostname = %APPEND% mb3admin.com,vsco.co,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com,api.xiuxiu.meitu.com，photos.adobe.io，buy.itunes.apple.com

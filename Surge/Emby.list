@@ -1,0 +1,125 @@
+# NAME: Emby
+# 请使用RULE-SET
+
+# > 流媒体垃圾影音服务器
+DOMAIN-SUFFIX,xmsl.org
+DOMAIN-SUFFIX,cf.xmsl.org
+DOMAIN-SUFFIX,free.xmsl.org
+DOMAIN-SUFFIX,cfde.xmsl.org
+DOMAIN-SUFFIX,line.xmsl.org
+DOMAIN-SUFFIX,pm.xmsl.org
+
+# > 流媒体MisakaF服务器
+DOMAIN-SUFFIX,misakaf.org
+DOMAIN-SUFFIX,emby2.misakaf.org
+DOMAIN-SUFFIX,cdn2.misakaf.org
+DOMAIN-SUFFIX,emby.aca.best
+DOMAIN-SUFFIX,porn.aca.best
+
+# > 流媒体熊猫Emby服务器
+DOMAIN-SUFFIX,emby.kim
+
+# > 流媒体卷毛鼠服务器
+DOMAIN-KEYWORD,jmsooo
+DOMAIN-SUFFIX,jmsooo.com
+DOMAIN-SUFFIX,cf.jmsooo.com
+DOMAIN-SUFFIX,cf2.jmsooo.com
+DOMAIN-SUFFIX,hk.jmsooo.com
+DOMAIN-SUFFIX,sg.jmsooo.com
+
+# > 流媒体终点站服务器
+DOMAIN-SUFFIX,emby.wtf
+DOMAIN-SUFFIX,pub1back.emby.wtf
+DOMAIN-SUFFIX,pub2back.emby.wtf
+DOMAIN-SUFFIX,pub3back.emby.wtf
+DOMAIN-SUFFIX,pub1.emby.wtf
+DOMAIN-SUFFIX,pub2.emby.wtf
+DOMAIN-SUFFIX,pub3.emby.wtf
+
+# > 流媒体emby-nexitally服务器
+DOMAIN-SUFFIX,emby.nexitally.com
+
+# > 流媒体emby-paoche服务器
+DOMAIN-SUFFIX,emby.cjpc.cc
+DOMAIN-SUFFIX,emby.cjpc.tv
+DOMAIN-SUFFIX,emby.cjpc.xyz
+
+# > 流媒体emby-flowercloud服务器
+DOMAIN-SUFFIX,emby.flowercloud.yt
+
+# > 流媒体emby-maying服务器
+DOMAIN-SUFFIX,emby.maying.club
+
+# > 流媒体emby-mdss服务器
+DOMAIN-SUFFIX,emby.mdss.cloud
+
+# > 流媒体emby-ytoo服务器
+DOMAIN-SUFFIX,emby.ytoo.li
+
+# > 流媒体emby-w8ves服务器
+DOMAIN-SUFFIX,embyserver.ga
+
+# > 流媒体emby-prpr服务器
+DOMAIN-SUFFIX,emby.prprcloud.com
+
+# > 流媒体emby-nyancat服务器
+DOMAIN-SUFFIX,emby.nyancat.net
+
+# > 流媒体emby-Plus体验服
+DOMAIN-SUFFIX,emby.plusmedia.site
+DOMAIN-SUFFIX,emby-cf.plusmedia.site 
+DOMAIN-SUFFIX,emby.xeton.dev
+DOMAIN-SUFFIX,jellyfin.xeton.dev
+DOMAIN-SUFFIX,movie.xeton.dev
+DOMAIN-SUFFIX,servers.xeton.dev
+
+# > 流媒体emby-Otaku体验服
+DOMAIN-SUFFIX,emby.otakudrive.life
+DOMAIN-SUFFIX,emby2.otakudrive.life 
+
+# > 流媒体emby-jmsooo体验服
+DOMAIN-SUFFIX,agahk1.jmsooo.com
+DOMAIN-SUFFIX,agasg1.jmsooo.com
+DOMAIN-SUFFIX,agajp1.jmsooo.com
+DOMAIN-SUFFIX,aws.jmsooo.com
+DOMAIN-SUFFIX,ntt1.jmsooo.com
+DOMAIN-SUFFIX,hinet.jmsooo.com
+DOMAIN-SUFFIX,cf1.jmsooo.com
+
+# > 流媒体pornemby服务器
+DOMAIN-SUFFIX,pornemby.club
+
+# > 流媒体IMM服务器
+DOMAIN-SUFFIX,emby.immtel.com
+
+# > 流媒体Odyssey服务器
+DOMAIN-KEYWORD,odysseyplus
+DOMAIN-SUFFIX,cf.odysseyplus.site
+DOMAIN-SUFFIX,agahk.odysseyplus.site
+DOMAIN-SUFFIX,agasg.odysseyplus.site
+DOMAIN-SUFFIX,ru.odysseyplus.site
+
+# > 流媒体Exflux服务器
+DOMAIN-SUFFIX,line.emby.men
+
+# > 流媒体SoCloud服务器
+DOMAIN-SUFFIX,emby.run
+
+# > 流媒体普拉斯影业服务器
+DOMAIN-SUFFIX,emby.plusmedia.site
+DOMAIN-SUFFIX,emby-sg.plusmedia.site
+DOMAIN-SUFFIX,emby-cf.plusmedia.site
+DOMAIN-SUFFIX,emby.xeton.dev
+DOMAIN-SUFFIX,jellyfin.xeton.dev
+DOMAIN-SUFFIX,movie.xeton.dev
+DOMAIN-SUFFIX,servers.xeton.dev
+
+# > 流媒体WaveCloud服务器
+DOMAIN-SUFFIX,embyserver.ga
+
+# > 流媒体其他emby服务器
+DOMAIN-SUFFIX,emby.mcwy.me
+DOMAIN-SUFFIX,emby.neko.edu.rs
+DOMAIN-SUFFIX,emby.ok.edu.hk
+DOMAIN-SUFFIX,emby.paoche.ooo
+DOMAIN-SUFFIX,mickeycloud.com

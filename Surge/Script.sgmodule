@@ -1,7 +1,7 @@
-#!name=🤖Self-use scripts
+#!name=✌️Self-use scripts
 #!desc=自用Script合集
 #!author=sempliciy
-#!category=Sempliciy
+#!category=✌️VV
 
 [URL Rewrite]
 ^https://i\.weread\.qq\.com/updateConfig - reject

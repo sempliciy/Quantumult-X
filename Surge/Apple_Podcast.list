@@ -5,10 +5,16 @@
 USER-AGENT,Podcast*
 PROCESS-NAME,Podcast
 DOMAIN-SUFFIX,amp-api.podcasts.apple.com
+DOMAIN-SUFFIX,amp-api.podcast.apple.com
 DOMAIN-SUFFIX,podcasts.apple.com
+DOMAIN-SUFFIX,podcast.apple.com
 DOMAIN-SUFFIX,bag.itunes.apple.com
 DOMAIN-SUFFIX,bookkeeper.itunes.apple.com
 DOMAIN-SUFFIX,applepodcasts.com
 DOMAIN-SUFFIX,pd.itunes.apple.com
 DOMAIN-SUFFIX,xp.apple.com
+DOMAIN-SUFFIX,fpinit.itunes.apple.com
+DOMAIN-SUFFIX,entitlements-edge.itunes.apple.com
+DOMAIN-SUFFIX,play.itunes.apple.com
+DOMAIN-SUFFIX,lookup-api.apple.com
 DOMAIN-SUFFIX,seahorseplanet.net

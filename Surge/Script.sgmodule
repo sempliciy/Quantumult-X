@@ -36,5 +36,8 @@ wxds = type=http-response, pattern=^https?:\/\/i.weread.qq.com\/(login|pay\/bala
 # 京东比价
 京东比价 = type=http-response, pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item), script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/JD/JD_Price.js, requires-body=true
 
+# NOMO相机解锁
+Nomo = type=http-response,pattern=https://nomo.dafork.com/api/v5/iap/ios_verify$,requires-body=1,max-size=0,script-path=https://github.com/DecoAri/JavaScript/blob/main/Surge/Nomo.js?raw=true
+
 [MITM]
-hostname = %APPEND% mb3admin.com,vsco.co,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com, *.xiuxiu.meitu.com, %APPEND% i.weread.qq.com, %APPEND% api.m.jd.com
+hostname = %APPEND% mb3admin.com,vsco.co,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com, *.xiuxiu.meitu.com, %APPEND% i.weread.qq.com, %APPEND% api.m.jd.com, %APPEND% nomo.dafork.com

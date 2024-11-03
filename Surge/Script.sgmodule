@@ -10,9 +10,6 @@
 # 微信快捷跳转
 微信快捷跳转 = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
 
-# 微信去广告
-http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
-
 # 解除微信链接限制
 解除微信链接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
 
@@ -27,21 +24,28 @@ Netflix Ratings = type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.c
 Netflix Ratings = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 Netflix Ratings Season = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js
 
-# 美图秀秀vip
-http-response ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/dev/raw/main/MeiTuXiuXiuProCrack.js
+# Wink，蛋啵，潮自拍，海报工厂，Chic
+# hostname = api-*.meitu.com
+美图系列 = type=http-response,pattern=^https?:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js
 
-# 微信读书vip(需重新用微信登陆，无法刷新->关闭脚本进入) 
-wxds = type=http-response, pattern=^https?:\/\/i.weread.qq.com\/(login|pay\/balance|user\/profile).*$, script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/wxds.js, requires-body=true, max-size=-1, timeout=60
+# 美颜相机
+# hostname = *.meiyan.com
+美颜相机 = type=http-response,pattern=^https?:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj
+
+# 美图秀秀
+# hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
+美图秀秀 = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx
+
+# Fimo_复古胶片相机
+# hostname = server.*.com
+Fimo复古相机 = type=http-response,pattern=^https?:\/\/server\.(yoyiapp|zbisq)\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
 
 # 京东比价
 京东比价 = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item), script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/JD/JD_Price.js, requires-body=true
-
-# NOMO相机解锁
-Nomo = type=http-response,pattern=^https?:\/\/nomo.dafork\.com\/api\/v5\/iap\/ios_verify$, script-path=https://github.com/DecoAri/JavaScript/blob/main/Surge/Nomo.js?raw=true, requires-body=true, max-size=0
 
 #Gentler Streak 解锁订阅
 Gentler Streak = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/afengye/QX/main/gsjk.js, requires-body=true, max-size=-1, timeout=60
 Gentler Streak = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/afengye/QX/main/gsjk.js, timeout=60
 
 [MITM]
-hostname = %APPEND% mb3admin.com,vsco.co,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com, *.xiuxiu.meitu.com, %APPEND% i.weread.qq.com, %APPEND% api.m.jd.com, %APPEND% nomo.dafork.com, %APPEND% api.revenuecat.com
+hostname = %APPEND% mb3admin.com,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, %APPEND% i.weread.qq.com, %APPEND% api.m.jd.com, *.meiyan.com, server.*.com

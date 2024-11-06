@@ -43,9 +43,12 @@ Fimo复古相机 = type=http-response,pattern=^https?:\/\/server\.(yoyiapp|zbisq
 # 京东比价
 京东比价 = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item), script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/JD/JD_Price.js, requires-body=true
 
-#Gentler Streak 解锁订阅
+# Gentler Streak 解锁订阅
 Gentler Streak = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/afengye/QX/main/gsjk.js, requires-body=true, max-size=-1, timeout=60
 Gentler Streak = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/afengye/QX/main/gsjk.js, timeout=60
 
+# BiliBili 高码率仅粉色旧版
+BiliBili =type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
+
 [MITM]
-hostname = %APPEND% mb3admin.com,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, %APPEND% i.weread.qq.com, %APPEND% api.m.jd.com, *.meiyan.com, server.*.com
+hostname = %APPEND% mb3admin.com,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, %APPEND% i.weread.qq.com, %APPEND% api.m.jd.com, *.meiyan.com, server.*.com, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bili*.*, *.bilibili.*, grpc.biliapi.net,*biliapi.net

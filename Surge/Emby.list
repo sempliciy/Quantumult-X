@@ -15,6 +15,9 @@ DOMAIN-SUFFIX,emby2.misakaf.org
 DOMAIN-SUFFIX,cdn2.misakaf.org
 DOMAIN-SUFFIX,emby.aca.best
 DOMAIN-SUFFIX,porn.aca.best
+DOMAIN-SUFFIX,stream1.misakaf.org
+DOMAIN-SUFFIX,stream2.misakaf.org
+DOMAIN-SUFFIX,stream3.misakaf.org
 
 # > 流媒体熊猫Emby服务器
 DOMAIN-SUFFIX,emby.kim

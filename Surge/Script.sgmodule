@@ -7,53 +7,39 @@
 ^https://i\.weread\.qq\.com/updateConfig - reject
 
 [Script]
-# Revenuecat解锁系列
-# hostname = api.revenuecat.com
-revenuecat1 = type=http-response,pattern= ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
-revenuecat2 = type=http-request,pattern= ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$),requires-body=0,max-size=0,script-path= https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js,script-update-interval=0
+#微信快捷跳转 hostname= weixin110.qq.com
+tbopener.js = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
 
-# 微信快捷跳转
-微信快捷跳转 = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
+#EmbyPremiere hostname = %APPEND% mb3admin.com
+EmbyPremiere.js = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,requires-body=1,max-size=0,script-path=https://gitlab.com/iptv-org/embypublic/-/raw/master/Script/EmbyPremiere.js
 
-# 解除微信链接限制
-解除微信链接限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
+#Revenuecat-系列 hostname = api.revenuecat.com, api.rc-backup.com
+Reheji = type=http-response, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, requires-body=true, max-size=-1, timeout=60
+Reheji = type=http-request, pattern=^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js, timeout=60
 
-# EmbyPremiere
-http-response ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/sempliciy/Quantumult-X/master/JS/EmbyPremiere.js,tag=embyUnlocked
+#彩云天气-广告净化/弹窗AD/去除亲友卡/去除悬浮模块 hostname = *.cyapi.cn
+caiyuntianqi = type=http-response, pattern=^https?:\/\/(ad|biz|wrapper|starplucker)\.cyapi\.cn\/.+\/((activity\?app_name|operation|config|req\?app_name=weather)|v\d\/(trial_card\/info|entries|friend_cards|token\/device)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js, requires-body=true, max-size=-1, timeout=60
 
-# TF 下载
-TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js
+#彩云天气-VIP信息
+caiyuntianqi = type=http-response, pattern=^https?:\/\/(biz|wrapper|starplucker)\.cyapi\.cn\/(v\d\/user\?app_name|.+\/v\d\/(vip_info|user_detail)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js, requires-body=true, max-size=-1, timeout=60
 
-# Netflix Ratings
-Netflix Ratings = type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
-Netflix Ratings = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
-Netflix Ratings Season = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js
+#彩云天气-SVIP地图-48小时预报
+caiyuntianqi = type=http-request, pattern=^https?:\/\/(api|wrapper)\.cyapi\.cn\/v\d\/(satellite|nafp\/origin_images), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js, timeout=60
 
-# Wink，蛋啵，潮自拍，海报工厂，Chic
-# hostname = api-*.meitu.com
-美图系列 = type=http-response,pattern=^https?:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js
+#Wink，蛋啵，潮自拍，海报工厂，Chic hostname = api-*.meitu.com
+mtxl = type=http-response, pattern=^https?:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxl.js, requires-body=true, max-size=-1, timeout=60
 
-# 美颜相机
-# hostname = *.meiyan.com
-美颜相机 = type=http-response,pattern=^https?:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js
+#美颜相机 hostname = *.meiyan.com
+myxj = type=http-response, pattern=^https?:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/myxj.js, requires-body=true, max-size=-1, timeout=60
 
-# 美图秀秀
-# hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
-美图秀秀 = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js
+#美图秀秀 hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
+mtxx = type=http-response, pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js, requires-body=true, max-size=-1, timeout=60
 
-# Fimo_复古胶片相机
-# hostname = server.*.com
-Fimo复古相机 = type=http-response,pattern=^https?:\/\/server\.(yoyiapp|zbisq)\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
+#Fimo_复古胶片相机 hostname = fimo.appfimo.com
+fimo = type=http-response, pattern=^https?:\/\/fimo\.appfimo\.com\/fimo-.*\/(user|apple\/certificate|config|startPopConfig|filmAll), script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js, requires-body=true, max-size=-1, timeout=60
 
-# 京东比价
-京东比价 = type=http-response, pattern=^https?:\/\/api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item), script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/JD/JD_Price.js, requires-body=true
-
-# Gentler Streak 解锁订阅
-Gentler Streak = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/afengye/QX/main/gsjk.js, requires-body=true, max-size=-1, timeout=60
-Gentler Streak = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/afengye/QX/main/gsjk.js, timeout=60
-
-# BiliBili 高码率仅粉色旧版
+# BiliBili 高码率仅粉色旧版 hostname = -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bili*.*, *.bilibili.*, grpc.biliapi.net,*biliapi.net
 BiliBili =type=http-response, pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?, script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% mb3admin.com,weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,*.baidu.com,testflight.apple.com,security.wechat.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, %APPEND% i.weread.qq.com, %APPEND% api.m.jd.com, *.meiyan.com, server.*.com, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bili*.*, *.bilibili.*, grpc.biliapi.net,*biliapi.net, api.revenuecat.com
+hostname = weixin110.qq.com, %APPEND% mb3admin.com, api.revenuecat.com, api.rc-backup.com, *.cyapi.cn, api-*.meitu.com, *.meiyan.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, fimo.appfimo.com, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bili*.*, *.bilibili.*, grpc.biliapi.net,*biliapi.net

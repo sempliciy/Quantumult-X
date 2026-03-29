@@ -38,6 +38,7 @@ DOMAIN-SUFFIX,pub3back.emby.wtf
 DOMAIN-SUFFIX,pub1.emby.wtf
 DOMAIN-SUFFIX,pub2.emby.wtf
 DOMAIN-SUFFIX,pub3.emby.wtf
+DOMAIN-SUFFIX,c.emby.wtf
 
 # > 流媒体emby-nexitally服务器
 DOMAIN-SUFFIX,emby.nexitally.com
